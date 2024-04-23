@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.section3swiper', {
-        observer: true,
-    observeParents: true,
+    var swiper = new Swiper('.shop-by-colorswiper', {
+  
         slidesPerView: 'auto',
-        spaceBetween: 30,
+        loop:'true',
+        // spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',
         },
@@ -12,7 +12,28 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
         },
     });
+    var swiper2 = new Swiper('.shop-by-categoryswiper', {
+
+        slidesPerView: 'auto',
+        centeredSlides:'true',
+        autoplay: {
+            delay: 2500, // Delay in milliseconds between slides (2500ms = 2.5s)
+            disableOnInteraction: false, // Continue autoplay after user interaction
+          },
+        loop: true,
+        spaceBetween: 30,  // Optional: add space between slides
+        pagination: {
+            el: '.swiper-pagination',  // Ensure this element exists if you use pagination
+            clickable: true,
+        },
+       
+    });
+    
 });
+
+
+
+
 document.querySelector('.scroll-button.prev').addEventListener('click', function() {
     document.querySelector('.flex-container').scrollBy({
         left: -300, // Adjust based on the width of your slides
@@ -25,33 +46,7 @@ document.querySelector('.scroll-button.next').addEventListener('click', function
         left: 300, // Adjust based on the width of your slides
         behavior: 'smooth'
     });
-});
-const slider = document.querySelector('.flex-container');
-let isDown = false;
-let startX;
-let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    slider.classList.add('active');  // Optional: for cursor styling
+
 });
 
-slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-});
-
-slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-});
-
-slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1; // Adjust this value as needed
-    slider.scrollLeft = scrollLeft - walk;
-});
