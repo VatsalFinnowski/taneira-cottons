@@ -81,10 +81,12 @@ body {
     flex: 0 0 100%; /* 100% of the container's width */
     overflow: hidden;
 }
-#shop-by-color .grid-1{
+#shop-by-color .grid-1,
+#shop-bestsellers .grid-1{
     padding-left: 6rem;
 }
-#shop-by-color .grid-2{
+#shop-by-color .grid-2,
+#shop-bestsellers .grid-2{
     padding-right: 6rem;
 }
 #shop-by-color .grid-3{
@@ -320,13 +322,16 @@ align-items: center;
             display: none;
         }
 
-    #shop-by-color .grid-1{
+        #shop-by-color .grid-1,
+        #shop-bestsellers .grid-1{
         padding-left: 2rem;
     }
-    #shop-by-color .grid-2{
+    #shop-by-color .grid-2,
+#shop-bestsellers .grid-2{
         padding-right: 2rem;
     }
-    #shop-by-color .grid-3{
+    #shop-by-color .grid-3,
+    #shop-bestsellers .grid-3{
         margin-top: 2rem;
         padding-left: 2rem;
     }
@@ -351,13 +356,16 @@ align-items: center;
         order: 3; /* Grid 2 goes to the third position */
         text-align: center;
     }
-    #shop-by-color .grid-1{
+    #shop-by-color .grid-1,
+    #shop-bestsellers .grid-1{
         padding-left: 0rem;
     }
-    #shop-by-color .grid-2{
+    #shop-by-color .grid-3,
+#shop-bestsellers .grid-3{
         padding-right: 0rem;
     }
-    #shop-by-color .grid-3{
+    #shop-by-color .grid-3,
+    #shop-bestsellers .grid-3{
         margin-top: 2rem;
         padding-left: 0rem;
     }
