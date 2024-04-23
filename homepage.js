@@ -12,6 +12,19 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.swiper-button-prev',
         },
     });
+    var swiper = new Swiper('.shop-bestsellers', {
+  
+        slidesPerView: 'auto',
+        loop:'true',
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
     var swiper2 = new Swiper('.shop-by-categoryswiper', {
 
         slidesPerView: 'auto',
