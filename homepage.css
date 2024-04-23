@@ -62,9 +62,9 @@ body {
   overflow-x: hidden;
 }
 #shop-by-color{
-    display: flex;
+    /* display: flex;
     align-items: flex-end;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .grid-1 {
@@ -98,7 +98,7 @@ body {
 }
 #shop-by-color .nav-link{
     padding: 2rem 1rem;
-    width: 21rem;
+    /* width: 21rem; */
     font-family: var(--grotesk);
     font-size: 16px;
     color: rgba(47, 37, 28, 1);
@@ -121,7 +121,7 @@ body {
 }
 
 .tab-pane-swiper{
-    width: 100%;
+    /* width: 100%; */
 }
 
  
@@ -142,7 +142,7 @@ left: 0;
 width: 6rem;
 height: 100%;
 background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-z-index: 100;
+z-index: 2;
 }
 #shop-by-color .swiper::after{
 content: '';
@@ -152,14 +152,14 @@ top: 0;
 right: 0;
 width: 6rem;
 height: 100%;
-background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-z-index: 100;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+z-index: 2;
 }
 
 #shop-by-color .swiper .swiper-wrapper ,
 #shop-bestsellers .swiper .swiper-wrapper{
-    padding-inline:3rem;
-    width: 100%;
+    /* padding-inline:3rem;
+    width: 100%; */
 }
 
 #shop-by-color .swiper .swiper-wrapper .swiper-slide {
@@ -293,13 +293,13 @@ z-index: 100;
 
 .swiper-buttons{
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     display: flex;
     flex-direction: row;
-    width: 85%;
+    width: 95%;
     justify-content: space-around;
 }
 
