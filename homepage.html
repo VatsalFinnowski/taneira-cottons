@@ -1,452 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./homepage.css" />
     <title>Document</title>
-  </head>
+</head>
 
-  <body>
-    <div id="shop-by-color">
-      <div class="shop-by-color-title grid-1">
-        <h5>SHOP BY COLOUR</h5>
-        <h2>Choose from a potpourri of delightful hues</h2>
-      </div>
-      <div class="grid-2 align-items-end">
-        <a href="">VIEW ALL COLOURS</a>
-      </div>
-      <div class="shop-by-color-tabsnav">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-2">
-              <div class="nav nav-pills" id="v-pills-tab" role="tablist">
-                <button
-                  class="nav-link active"
-                  id="v-pills-pastels-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-pastels"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-pastels"
-                  aria-selected="true"
-                >
-                  <div class="nav-link-content">
-                    <img src="./public/COLORS/1.png" alt="Pastels" />
-                    <p class="nav-link-content-name">Pastels</p>
-                  </div>
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-jewel-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-jewel"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-jewel"
-                  aria-selected="false"
-                >
-                  <div class="nav-link-content">
-                    <img src="./public/COLORS/2.png" alt="Jewel Tones" />
-                    <p class="nav-link-content-name">Jewel Tones</p>
-                  </div>
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-earthy-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-earthy"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-earthy"
-                  aria-selected="false"
-                >
-                  <div class="nav-link-content">
-                    <img src="./public/COLORS/3.png" alt="Earthy Hues" />
-                    <p class="nav-link-content-name">Earthy Hues</p>
-                  </div>
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-neutrals-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-neutrals"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-neutrals"
-                  aria-selected="false"
-                >
-                  <div class="nav-link-content">
-                    <img src="./public/COLORS/4.png" alt="Neutrals" />
-                    <p class="nav-link-content-name">Neutrals</p>
-                  </div>
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-summary-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-summary"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-summary"
-                  aria-selected="false"
-                >
-                  <div class="nav-link-content">
-                    <img src="./public/COLORS/5.png" alt="Summary Pops" />
-                    <p class="nav-link-content-name">Summary Pops</p>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="col-10">
-              <div class="tab-content" id="v-pills-tabContent">
-                <div
-                  class="tab-pane fade show active tab-pane-swiper"
-                  id="v-pills-pastels"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-pastels-tab "
-                >
-                  <div class="swiper shop-by-colorswiper">
-                    <div class="swiper-wrapper">
-                      <!-- Dynamic loading of images -->
-                      <div class="swiper-slide">
-                        <img src="./public/1.png" alt="Image 1" />
-                        <p class="shop-by-color-item-name">
-                          Light Green hand Printed Banarsee Zari
-                          wfsadfasdfsadfgasfasdf
-                        </p>
-                        <p class="shop-by-color-item-price">
-                          <span class="original-price">₹ 1,200</span> ₹ 900
-                        </p>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./public/1.png" alt="Image 1" />
-                        <p class="shop-by-color-item-name">
-                          Light Green hand Printed Banarsee Zari
-                          wfsadfasdfsadfgasfasdf
-                        </p>
-                        <p class="shop-by-color-item-price">
-                          <span class="original-price">₹ 1,200</span> ₹ 900
-                        </p>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./public/2.png" alt="Image 1" />
-                        <p class="shop-by-color-item-name">
-                          Light Green hand Printed Banarsee Zari
-                          wfsadfasdfsadfgasfasdf
-                        </p>
-                        <p class="shop-by-color-item-price">
-                          <span class="original-price">₹ 1,200</span> ₹ 900
-                        </p>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./public/3.png" alt="Image 1" />
-                        <p class="shop-by-color-item-name">
-                          Light Green hand Printed Banarsee Zari
-                          wfsadfasdfsadfgasfasdf
-                        </p>
-                        <p class="shop-by-color-item-price">
-                          <span class="original-price">₹ 1,200</span> ₹ 900
-                        </p>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./public/4.png" alt="Image 1" />
-                        <p class="shop-by-color-item-name">
-                          Light Green hand Printed Banarsee Zari
-                          wfsadfasdfsadfgasfasdf
-                        </p>
-                        <p class="shop-by-color-item-price">
-                          <span class="original-price">₹ 1,200</span> ₹ 900
-                        </p>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./public/5.png" alt="Image 1" />
-                        <p class="shop-by-color-item-name">
-                          Light Green hand Printed Banarsee Zari
-                          wfsadfasdfsadfgasfasdf
-                        </p>
-                        <p class="shop-by-color-item-price">
-                          <span class="original-price">₹ 1,200</span> ₹ 900
-                        </p>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./public/5.png" alt="Image 1" />
-                        <p class="shop-by-color-item-name">
-                          Light Green hand Printed Banarsee Zari
-                          wfsadfasdfsadfgasfasdf
-                        </p>
-                        <p class="shop-by-color-item-price">
-                          <span class="original-price">₹ 1,200</span> ₹ 900
-                        </p>
-                      </div>
-                    </div>
-                    <div class="swiper-buttons">
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-                    </div>
-                  </div>
-                </div>
+<body>
 
-                <!-- </div> -->
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-jewel"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-jewel-tab"
-                >
-                  Content for Jewel Tones
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-earthy"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-earthy-tab"
-                >
-                  Content for Earthy Hues
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-neutrals"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-neutrals-tab"
-                >
-                  Content for Neutrals
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-summary"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-summary-tab"
-                >
-                  Content for Summary Pops
-                </div>
-              </div>
+    <div id="shop-by-craft">
+
+        <div class="row">
+            <div class="col-12 shop-by-craft-title">
+                <h5>SHOP BY CRAFT</h5>
+                <h2>Discover legacy Indian crafts in the finest cottons</h2>
             </div>
-          </div>
+            
+            <div class="col-12 swiper shop-by-craft-swiper ">
+                <div class="swiper-wrapper craft-swiper-wrapper">
+                  
+                </div>
+                <div class="swiper-buttons">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </div>
-      </div>
+
+    </div>
+    <div id="shop-by-color">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-12 col-lg-8 shop-by-color-title  order-1 ">
+                    <h5>SHOP BY COLOUR</h5>
+                    <h2>Choose from a potpourri of delightful hues</h2>
+                </div>
+                <div class="col-12 col-lg-4 align-items-end  order-3 order-md-2">
+                    <div class="a-link">
+                        <a href="">VIEW ALL COLOURS</a>
+                    </div>
+                </div>
+
+                <div class="col-12 shop-by-color-tabsnav order-2 order-md-3">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 custom-nav">
+                            <div class="nav nav-pills" id="v-pills-tab" role="tablist">
+                                <button class="nav-link active" id="v-pills-pastels-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-pastels" type="button" role="tab"
+                                    aria-controls="v-pills-pastels" aria-selected="true">
+                                    <div class="nav-link-content">
+                                        <img src="./public/COLORS/1.png" alt="Pastels" />
+                                        <p class="nav-link-content-name">Pastels</p>
+                                    </div>
+                                </button>
+                                <button class="nav-link" id="v-pills-jewel-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-jewel" type="button" role="tab"
+                                    aria-controls="v-pills-jewel" aria-selected="false">
+                                    <div class="nav-link-content">
+                                        <img src="./public/COLORS/2.png" alt="Jewel Tones" />
+                                        <p class="nav-link-content-name">Jewel Tones</p>
+                                    </div>
+                                </button>
+                                <button class="nav-link" id="v-pills-earthy-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-earthy" type="button" role="tab"
+                                    aria-controls="v-pills-earthy" aria-selected="false">
+                                    <div class="nav-link-content">
+                                        <img src="./public/COLORS/3.png" alt="Earthy Hues" />
+                                        <p class="nav-link-content-name">Earthy Hues</p>
+                                    </div>
+                                </button>
+                                <button class="nav-link" id="v-pills-neutrals-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-neutrals" type="button" role="tab"
+                                    aria-controls="v-pills-neutrals" aria-selected="false">
+                                    <div class="nav-link-content">
+                                        <img src="./public/COLORS/4.png" alt="Neutrals" />
+                                        <p class="nav-link-content-name">Neutrals</p>
+                                    </div>
+                                </button>
+                                <button class="nav-link" id="v-pills-summary-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-summary" type="button" role="tab"
+                                    aria-controls="v-pills-summary" aria-selected="false">
+                                    <div class="nav-link-content">
+                                        <img src="./public/COLORS/5.png" alt="Summary Pops" />
+                                        <p class="nav-link-content-name">Summary Pops</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12 custom-tab">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active tab-pane-swiper" id="v-pills-pastels"
+                                    role="tabpanel" aria-labelledby="v-pills-pastels-tab ">
+                                    <div class="swiper shop-by-colorswiper">
+                                        <div class="swiper-wrapper shop-by-color-wrapper">
+                                            <!-- Dynamic loading of images -->
+
+                                        </div>
+                                        <div class="swiper-buttons">
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- </div> -->
+                                <div class="tab-pane fade" id="v-pills-jewel" role="tabpanel"
+                                    aria-labelledby="v-pills-jewel-tab">
+                                    Content for Jewel Tones
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-earthy" role="tabpanel"
+                                    aria-labelledby="v-pills-earthy-tab">
+                                    Content for Earthy Hues
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-neutrals" role="tabpanel"
+                                    aria-labelledby="v-pills-neutrals-tab">
+                                    Content for Neutrals
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-summary" role="tabpanel"
+                                    aria-labelledby="v-pills-summary-tab">
+                                    Content for Summary Pops
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="shop-bestsellers">
-      <div class="shop-by-color-title grid-1">
-        <h5>SHOP BY COLOUR</h5>
-        <h2>Choose from a potpourri of delightful hues</h2>
-      </div>
-      <div class="grid-2">
-        <a href="">VIEW ALL COLOURS &gt;</a>
-      </div>
-      <div class="swiper shop-bestsellers grid-3">
-        <div class="swiper-wrapper">
-          <!-- Dynamic loading of images -->
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/1.png" alt="Image 1" />
+        <div class="row">
+            <div class="col-12 col-lg-8 shop-by-color-title order-1 ">
+                <h5>SHOP BY COLOUR</h5>
+                <h2>Choose from a potpourri of delightful hues</h2>
             </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/2.png" alt="Image 1" />
+            <div class="col-12 col-lg-4 align-items-end  order-3 order-md-2">
+                <div class="a-link">
+                    <a href="">VIEW ALL COLOURS</a>
+                </div>
             </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/3.png" alt="Image 1" />
-            </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/4.png" alt="Image 1" />
-            </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/5.png" alt="Image 1" />
-            </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/1.png" alt="Image 1" />
-            </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/2.png" alt="Image 1" />
-            </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/3.png" alt="Image 1" />
-            </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/4.png" alt="Image 1" />
-            </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="shop-by-color-img-container">
-              <img src="./public/5.png" alt="Image 1" />
-            </div>
-            <p class="shop-by-color-item-name">
-              Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
-            </p>
-            <p class="shop-by-color-item-price">
-              <span class="original-price">₹ 1,200</span> ₹ 900
-            </p>
-          </div>
-        </div>
+            <div class=" col-12 swiper shop-bestsellers order-2 order-md-3">
+                <div class="swiper-wrapper shop-best-sellers-wrapper">
+                    <!-- Dynamic loading of images -->
+                    <!-- <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/1.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/2.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/3.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/4.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/5.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/1.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/2.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/3.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/4.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-by-color-img-container">
+                            <img src="./public/5.png" alt="Image 1" />
+                        </div>
+                        <p class="shop-by-color-item-name">
+                            Light Green hand Printed Banarsee Zari wfsadfasdfsadfgasfasdf
+                        </p>
+                        <p class="shop-by-color-item-price">
+                            <span class="original-price">₹ 1,200</span> ₹ 900
+                        </p>
+                    </div> -->
+                </div>
 
-        <div class="swiper-buttons">
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+                <div class="swiper-buttons">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
 
+
     <div id="shop-by-category">
-      <h5>SHOP BY CATEGORY</h5>
-      <h2>Browse drapes, ready-to-wear staples, and more</h2>
-      <div class="swiper w-100 shop-by-categoryswiper">
-        <div class="swiper-wrapper">
-          <!-- Dynamic loading of images -->
-          <div class="swiper-slide">
-            <img src="./public/category/1.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Sarees</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/2.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Kurtas</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/3.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Kurta Sets</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/4.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Blouses</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/5.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Short tops</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/1.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Sarees</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/2.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Kurtas</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/3.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Kurta Sets</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/4.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Blouses</p>
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/category/5.png" alt="Image 1" />
-            <p class="shop-by-color-item-name">Short tops</p>
-          </div>
+        <h5>SHOP BY CATEGORY</h5>
+        <h2>Browse drapes, ready-to-wear staples, and more</h2>
+        <div class="swiper w-100 shop-by-categoryswiper">
+            <div class="swiper-wrapper">
+                <!-- Dynamic loading of images -->
+                <div class="swiper-slide">
+                    <img src="./public/category/1.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Sarees</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/2.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Kurtas</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/3.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Kurta Sets</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/4.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Blouses</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/5.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Short tops</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/1.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Sarees</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/2.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Kurtas</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/3.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Kurta Sets</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/4.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Blouses</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./public/category/5.png" alt="Image 1" />
+                    <p class="shop-by-color-item-name">Short tops</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div id="section9">
-      <h5>DID YOU KNOW?</h5>
-      <h2>Cotton Trivia</h2>
-      <img src="./public/cotton.png" alt="cotton" class="img-fluid" />
-      <!-- make image responsive -->
-      <img
-        src="./public/cotton-mobile.png"
-        alt="cotton"
-        class="img-fluid-mobile"
-      />
-      <!-- make image responsive -->
-      <div class="row trivia-cotton-desc">
-        <div class="col-md-3 col-6 trivia-cotton-desc-item">
-          <h5>01</h5>
-          <p>Cotton can absorb up to 27 times its weight in water</p>
+        <h5>DID YOU KNOW?</h5>
+        <h2>Cotton Trivia</h2>
+        <img src="./public/cotton.png" alt="cotton" class="img-fluid" />
+        <!-- make image responsive -->
+        <img src="./public/cotton-mobile.png" alt="cotton" class="img-fluid-mobile" />
+        <!-- make image responsive -->
+        <div class="row trivia-cotton-desc">
+            <div class="col-md-3 col-6 trivia-cotton-desc-item">
+                <h5>01</h5>
+                <p>Cotton can absorb up to 27 times its weight in water</p>
+            </div>
+            <div class="col-md-3 col-6 trivia-cotton-desc-item">
+                <h5>02</h5>
+                <p>Cotton fibres are stronger when they are wet</p>
+            </div>
+            <div class="col-md-3 col-6 trivia-cotton-desc-item">
+                <h5>03</h5>
+                <p>India is the world's second-largest producer of cotton</p>
+            </div>
+            <div class="col-md-3 col-6 trivia-cotton-desc-item">
+                <h5>04</h5>
+                <p>
+                    Cotton is a major cash crop for many Indian farmers, supporting
+                    millions of livelihoods
+                </p>
+            </div>
         </div>
-        <div class="col-md-3 col-6 trivia-cotton-desc-item">
-          <h5>02</h5>
-          <p>Cotton fibres are stronger when they are wet</p>
-        </div>
-        <div class="col-md-3 col-6 trivia-cotton-desc-item">
-          <h5>03</h5>
-          <p>India is the world's second-largest producer of cotton</p>
-        </div>
-        <div class="col-md-3 col-6 trivia-cotton-desc-item">
-          <h5>04</h5>
-          <p>
-            Cotton is a major cash crop for many Indian farmers, supporting
-            millions of livelihoods
-          </p>
-        </div>
-      </div>
     </div>
 
     <!-- Swiper JS -->
@@ -455,5 +354,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="./homepage.js"></script>
-  </body>
+</body>
+
 </html>
