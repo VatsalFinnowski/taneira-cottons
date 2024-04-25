@@ -382,6 +382,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   var swiper4 = new Swiper(".shop_by_craft_swiper_box", {
+    // slidesPerView: "auto",
+
     allowTouchMove: false,
     loop: true,
     centeredSlides: "true",
@@ -420,7 +422,7 @@ document.addEventListener("DOMContentLoaded", function () {
       //   },
       1600: {
         slidesPerView: 7,
-        spaceBetween: 40,
+        spaceBetween: 0,
       },
     },
   });
