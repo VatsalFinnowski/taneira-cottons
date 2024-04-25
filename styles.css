@@ -154,6 +154,7 @@ body {
   margin-bottom: 2rem;
 }
 #shop-by-craft .shop_by_craft_swiper {
+  position: relative;
   height: 100%;
   width: 100%;
 }
@@ -208,6 +209,63 @@ body {
 }
 #shop-by-craft .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card .shop_by_craft_swiper_second_card_img {
   border-radius: 20px 0px 20px 0px;
+}
+#shop-by-craft .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card .shop_by_craft_swiper_second_card_inner {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+#shop-by-craft .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card .shop_by_craft_swiper_second_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: white;
+  transform: rotateY(180deg);
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+#shop-by-craft .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card .shop_by_craft_swiper_second_card_back ul li {
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+#shop-by-craft .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card .shop_by_craft_swiper_second_card_back ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+#shop-by-craft .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card .shop_by_craft_swiper_second_card_back ul li:before {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  content: url(./public/hero-slider/li-star.svg);
+  height: 100%;
+  width: 10px;
+}
+#shop-by-craft .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card .shop_by_craft_swiper_second_card_back ul li:after {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  content: url(./public/hero-slider/li-star.svg);
+  height: 100%;
+  width: 10px;
+}
+#shop-by-craft .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card:hover .shop_by_craft_swiper_second_card_inner {
+  transform: rotateY(180deg);
 }
 
 .shop-by-color-swiper-pagination .swiper-pagination-bullet-active {

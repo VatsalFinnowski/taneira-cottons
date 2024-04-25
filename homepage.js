@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-  var swiper4 = new Swiper(".shop_by_craft_swiper_box", {
+  const swiper4 = new Swiper(".shop_by_craft_swiper_box", {
     // slidesPerView: "auto",
 
     allowTouchMove: false,
@@ -425,7 +425,23 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 0,
       },
     },
+    on: {
+      slideChange: (params) => {
+        var activeIndex = params.activeIndex;
+        // Get the content of the active slide
+        var activeSlideContent = params.slides[activeIndex];
+        var activeSlideDataInfo = params.slides[activeIndex].dataset.info;
+        console.log(
+          activeSlideContent,
+          activeSlideDataInfo,
+          "swiper initialized"
+        );
+      },
+    },
   });
+  // swiper4.on("slideChange", function (e) {
+  //   console.log("*** swiper4.activeIndex", swiper4.activeIndex);
+  // });
 });
 
 document
@@ -437,11 +453,11 @@ document
     });
   });
 
-document
-  .querySelector(".scroll-button.next")
-  .addEventListener("click", function () {
-    document.querySelector(".flex-container").scrollBy({
-      left: 300, // Adjust based on the width of your slides
-      behavior: "smooth",
-    });
-  });
+// document
+//   .querySelector(".scroll-button.next")
+//   .addEventListener("click", function () {
+//     document.querySelector(".flex-container").scrollBy({
+//       left: 300, // Adjust based on the width of your slides
+//       behavior: "smooth",
+//     });
+//   });
