@@ -282,6 +282,8 @@
 // document.addEventListener("DOMContentLoaded", populateSwiper);
 // document.addEventListener("DOMContentLoaded", populateSwiper2);
 
+const windowWidth = window.innerWidth;
+
 document.addEventListener("DOMContentLoaded", function () {
   // var swiper0 = new Swiper(".shop-by-craft-swiper", {
   //   slidesPerView: "auto",
@@ -381,67 +383,103 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-  const swiper4 = new Swiper(".shop_by_craft_swiper_box", {
-    // slidesPerView: "auto",
 
-    allowTouchMove: false,
-    loop: true,
-    centeredSlides: "true",
-    // autoplay: {
-    //   delay: 2500, // Delay in milliseconds between slides (2500ms = 2.5s)
-    //   disableOnInteraction: false, // Continue autoplay after user interaction
-    // },
-    // loop: true,
-    spaceBetween: 0, // Optional: add space between slides
-    // pagination: {
-    //   el: ".swiper-pagination", // Ensure this element exists if you use pagination
-    //   clickable: true,
-    // },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 3,
-        spaceBetween: 90,
+  //shop by craft desktop slider
+
+  if (windowWidth < 768) {
+    const swiper5 = new Swiper(".shop_by_craft_swiper_box_mobile_Swiper", {
+      speed: 800,
+      slidesPerView: 1,
+
+      // allowTouchMove: false,
+      loop: true,
+      // centeredSlides: "true",
+      autoplay: {
+        delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
+        disableOnInteraction: false, // Continue autoplay after user interaction
       },
-      // when window width is >= 480px
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 30,
+      // loop: true,
+      // spaceBetween: 0, // Optional: add space between slides
+      pagination: {
+        el: ".swiper-pagination", // Ensure this element exists if you use pagination
+        clickable: true,
       },
-      // when window width is >= 640px
-      1200: {
-        slidesPerView: 5,
-        spaceBetween: 0,
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
+    });
+  } else {
+    const shopByCraftSwiperContainer = document.querySelector("#shop-by-craft");
+
+    const swiper4 = new Swiper(".shop_by_craft_swiper_box", {
+      speed: 800,
+
+      allowTouchMove: false,
+      loop: true,
+      centeredSlides: "true",
+      autoplay: {
+        delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
+        disableOnInteraction: false, // Continue autoplay after user interaction
       },
-      //   1400: {
-      //     slidesPerView: 3.75,
-      //     spaceBetween: 40,
-      //   },
-      1600: {
-        slidesPerView: 7,
-        spaceBetween: 0,
+      // loop: true,
+      spaceBetween: 0, // Optional: add space between slides
+      // pagination: {
+      //   el: ".swiper-pagination", // Ensure this element exists if you use pagination
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-    },
-    on: {
-      slideChange: (params) => {
-        var activeIndex = params.activeIndex;
-        // Get the content of the active slide
-        var activeSlideContent = params.slides[activeIndex];
-        var activeSlideDataInfo = params.slides[activeIndex].dataset.info;
-        console.log(
-          activeSlideContent,
-          activeSlideDataInfo,
-          "swiper initialized"
-        );
+      breakpoints: {
+        0: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        // when window width is >= 480px
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 0,
+        },
+        // when window width is >= 640px
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 0,
+        },
+        //   1400: {
+        //     slidesPerView: 3.75,
+        //     spaceBetween: 40,
+        //   },
+        1600: {
+          slidesPerView: 7,
+          spaceBetween: 0,
+        },
       },
-    },
-  });
-  // swiper4.on("slideChange", function (e) {
-  //   console.log("*** swiper4.activeIndex", swiper4.activeIndex);
-  // });
+      on: {
+        slideChange: (params) => {
+          var activeIndex = params.activeIndex;
+          // Get the content of the active slide
+          var activeSlideContent = params.slides[activeIndex];
+          var activeSlideDataInfo = params.slides[activeIndex].dataset.info;
+          shopByCraftSwiperContainer.classList.add("transition-effect"); // Add transition class
+          activeSlideDataInfo
+            ? (shopByCraftSwiperContainer.style.backgroundImage = `url(${activeSlideDataInfo})`)
+            : null;
+
+          setTimeout(() => {
+            shopByCraftSwiperContainer.classList.remove("transition-effect");
+          }, 500); // Duration of the transition in milliseconds
+          console.log(
+            activeSlideContent,
+            activeSlideDataInfo,
+            shopByCraftSwiperContainer.style.backgroundImage,
+            "swiper initialized"
+          );
+        },
+      },
+    });
+  }
 });
 
 document
