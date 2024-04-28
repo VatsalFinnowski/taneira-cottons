@@ -531,8 +531,10 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-buttons">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -773,17 +775,21 @@
         <div class="row">
           <div class="col-12 col-lg-8 shop-by-color-title order-1">
             <h5>SHOP BY COLOUR</h5>
-            <h2>Choose from a potpourri of delightful hues</h2>
+            <h2>
+              Choose from a potpourri <br />
+              of delightful hues
+            </h2>
           </div>
           <div class="col-12 col-lg-4 align-items-end order-3 order-md-2">
             <div class="a-link">
               <a href="">VIEW ALL COLOURS</a>
+              >
             </div>
           </div>
 
           <div class="col-12 shop-by-color-tabsnav order-2 order-md-3">
-            <div class="row">
-              <div class="col-lg-3 col-12 p-0">
+            <div class="row row-cols-1 row-cols-xl-2">
+              <div class="col p-0">
                 <div class="custom-nav">
                   <div class="nav nav-pills" id="v-pills-tab" role="tablist">
                     <button
@@ -868,29 +874,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-9 col-12 p-0">
+              <div class="col flex-grow-1 p-0">
                 <div class="custom-tab">
                   <div class="tab-content" id="v-pills-tabContent">
-                    <div
-                      class="tab-pane fade show active tab-pane-swiper"
-                      id="v-pills-pastels"
-                      role="tabpanel"
-                      aria-labelledby="v-pills-pastels-tab "
-                    >
+                    <div class="tab-pane fade show active" id="v-pills-pastels">
+                      <div
+                        class="d-md-none d-flex align-items-center justify-content-center mt-4 mb-2"
+                      >
+                        <img src="./public/COLORS/1.png" alt="color-icon" />
+                      </div>
                       <div
                         class="swiper shop-by-colorswiper swiper-initialized swiper-horizontal swiper-backface-hidden"
                       >
-                        <div
-                          class="swiper-wrapper shop-by-color-wrapper"
-                          id="swiper-wrapper-89fe165113a817e9"
-                          aria-live="polite"
-                        >
-                          <div
-                            class="swiper-slide swiper-slide-active"
-                            role="group"
-                            aria-label="1 / 5"
-                            style="width: 256.8px; margin-right: 40px"
-                          >
+                        <div class="swiper-wrapper shop-by-color-wrapper">
+                          <div class="swiper-slide">
                             <img src="./public/1.png" alt="Image 1" />
                             <p class="shop-by-color-item-name">
                               Light Green hand Printed Banarsee Zari
@@ -911,12 +908,7 @@
                             </div>
                           </div>
 
-                          <div
-                            class="swiper-slide swiper-slide-next"
-                            role="group"
-                            aria-label="2 / 5"
-                            style="width: 256.8px; margin-right: 40px"
-                          >
+                          <div class="swiper-slide">
                             <img src="./public/2.png" alt="Image 1" />
                             <p class="shop-by-color-item-name">
                               Light Green hand Printed Banarsee Zari
@@ -937,12 +929,7 @@
                             </div>
                           </div>
 
-                          <div
-                            class="swiper-slide"
-                            role="group"
-                            aria-label="3 / 5"
-                            style="width: 256.8px; margin-right: 40px"
-                          >
+                          <div class="swiper-slide">
                             <img src="./public/3.png" alt="Image 1" />
                             <p class="shop-by-color-item-name">
                               Light Green hand Printed Banarsee Zari
@@ -963,12 +950,7 @@
                             </div>
                           </div>
 
-                          <div
-                            class="swiper-slide"
-                            role="group"
-                            aria-label="4 / 5"
-                            style="width: 256.8px; margin-right: 40px"
-                          >
+                          <div class="swiper-slide">
                             <img src="./public/4.png" alt="Image 1" />
                             <p class="shop-by-color-item-name">
                               Light Green hand Printed Banarsee Zari
@@ -989,12 +971,7 @@
                             </div>
                           </div>
 
-                          <div
-                            class="swiper-slide"
-                            role="group"
-                            aria-label="5 / 5"
-                            style="width: 256.8px; margin-right: 40px"
-                          >
+                          <div class="swiper-slide">
                             <img src="./public/5.png" alt="Image 1" />
                             <p class="shop-by-color-item-name">
                               Light Green hand Printed Banarsee Zari
@@ -1092,6 +1069,319 @@
         </div>
       </div>
     </div>
+    <div id="shop_from_reels">
+      <div class="shop_from_reels_head">
+        <h5>SHOP FROM REELS</h5>
+        <h2>Watch, explore, and shop</h2>
+      </div>
+      <div class="shop_from_reels_body">
+        <div class="swiper shop_from_reels_body_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_from_reels_card">
+                <div class="shop_from_reels_card_inner">
+                  <img
+                    src="./public/shop-reels/reel-1.png"
+                    alt="reels-img"
+                    class="shop_from_reels_card_image"
+                  />
+                  <div class="reels-view-box">
+                    <img
+                      src="./public/shop-reels/reels-view-icon.svg"
+                      alt="reels-icon"
+                    />
+                    <h4>23k views</h4>
+                  </div>
+                  <img
+                    src="./public/shop-reels/play-icon.svg"
+                    alt="play icon"
+                    class="shop_from_reels_card_play_icon"
+                  />
+                  <div class="reels-view-box-button-box"></div>
+                  <button class="reels-view-box-button">
+                    view this product
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-buttons">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="shop-bestsellers">
       <div class="row">
         <div class="col-12 col-lg-8 order-1">
@@ -1103,24 +1393,15 @@
         <div class="col-12 col-lg-4 align-items-end order-3 order-md-2">
           <div class="a-link">
             <a href="">VIEW ALL BESTSELLERS</a>
+            >
           </div>
         </div>
         <div class="col-12 order-2 order-md-3">
           <div
             class="swiper shop-bestsellers swiper-initialized swiper-horizontal swiper-backface-hidden"
           >
-            <div
-              class="swiper-wrapper shop-best-sellers-wrapper"
-              id="swiper-wrapper-b10521710da0deb584"
-              aria-live="polite"
-              style="transform: translate3d(0px, 0px, 0px)"
-            >
-              <div
-                class="swiper-slide swiper-slide-active"
-                role="group"
-                aria-label="1 / 5"
-                style="margin-right: 20px"
-              >
+            <div class="swiper-wrapper shop-best-sellers-wrapper">
+              <div class="swiper-slide">
                 <div class="shop-by-color-img-container">
                   <img
                     src="./public/1.png"
@@ -1146,12 +1427,7 @@
                 </div>
               </div>
 
-              <div
-                class="swiper-slide swiper-slide-next"
-                role="group"
-                aria-label="2 / 5"
-                style="margin-right: 20px"
-              >
+              <div class="swiper-slide">
                 <div class="shop-by-color-img-container">
                   <img
                     src="./public/2.png"
@@ -1177,12 +1453,7 @@
                 </div>
               </div>
 
-              <div
-                class="swiper-slide"
-                role="group"
-                aria-label="3 / 5"
-                style="margin-right: 20px"
-              >
+              <div class="swiper-slide">
                 <div class="shop-by-color-img-container">
                   <img
                     src="./public/3.png"
@@ -1208,12 +1479,7 @@
                 </div>
               </div>
 
-              <div
-                class="swiper-slide"
-                role="group"
-                aria-label="4 / 5"
-                style="margin-right: 20px"
-              >
+              <div class="swiper-slide">
                 <div class="shop-by-color-img-container">
                   <img
                     src="./public/4.png"
@@ -1239,12 +1505,7 @@
                 </div>
               </div>
 
-              <div
-                class="swiper-slide"
-                role="group"
-                aria-label="5 / 5"
-                style="margin-right: 20px"
-              >
+              <div class="swiper-slide">
                 <div class="shop-by-color-img-container">
                   <img
                     src="./public/5.png"
@@ -1271,28 +1532,10 @@
               </div>
             </div>
             <div class="swiper-buttons">
-              <div
-                class="swiper-button-next"
-                tabindex="0"
-                role="button"
-                aria-label="Next slide"
-                aria-controls="swiper-wrapper-b10521710da0deb584"
-                aria-disabled="false"
-              ></div>
-              <div
-                class="swiper-button-prev swiper-button-disabled"
-                tabindex="-1"
-                role="button"
-                aria-label="Previous slide"
-                aria-controls="swiper-wrapper-b10521710da0deb584"
-                aria-disabled="true"
-              ></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <span
-              class="swiper-notification"
-              aria-live="assertive"
-              aria-atomic="true"
-            ></span>
+            <div class="swiper-pagination d-lg-none"></div>
           </div>
         </div>
       </div>
@@ -1343,34 +1586,122 @@
             <p class="shop-by-color-item-name">Short tops</p>
           </div>
         </div>
+        <div class="swiper-pagination d-lg-none"></div>
       </div>
     </div>
+
+    <section id="shop_by_occassion">
+      <div class="shop_by_occassion_head">
+        <h3>shop by occassion</h3>
+        <h2>Dress up or dress down, as you please</h2>
+      </div>
+      <div class="shop_by_occassion_swiper_box">
+        <div class="swiper shop_by_occassion_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="shop_by_occassion_swiper_card">
+                <div class="shop_by_occassion_swiper_card_inner">
+                  <img
+                    src="./public/shop-occassion/card1.png"
+                    alt="shop by occassion card 1"
+                    class="img-fluid shop_by_occassion_swiper_card_image"
+                  />
+                  <h2>The Cubicle</h2>
+                  <h3>Minimal styles for work and formal <br />events.</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_by_occassion_swiper_card">
+                <div class="shop_by_occassion_swiper_card_inner">
+                  <img
+                    src="./public/shop-occassion/card2.png"
+                    alt="shop by occassion card 2"
+                    class="img-fluid shop_by_occassion_swiper_card_image"
+                  />
+                  <h2>Catch-ups & Conversations</h2>
+                  <h3>
+                    Breezy styles for casual meet-ups and<br />everyday
+                    ensembles
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_by_occassion_swiper_card">
+                <div class="shop_by_occassion_swiper_card_inner">
+                  <img
+                    src="./public/shop-occassion/card3.png"
+                    alt="shop by occassion card 3"
+                    class="img-fluid shop_by_occassion_swiper_card_image"
+                  />
+                  <h2>Celebrations</h2>
+                  <h3>
+                    Classic styles for festive events and<br />special
+                    occasions.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_by_occassion_swiper_card">
+                <div class="shop_by_occassion_swiper_card_inner">
+                  <img
+                    src="./public/shop-occassion/card3.png"
+                    alt="shop by occassion card 3"
+                    class="img-fluid shop_by_occassion_swiper_card_image"
+                  />
+                  <h2>Celebrations</h2>
+                  <h3>
+                    Classic styles for festive events and<br />special
+                    occasions.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="shop_by_occassion_swiper_card">
+                <div class="shop_by_occassion_swiper_card_inner">
+                  <img
+                    src="./public/shop-occassion/card3.png"
+                    alt="shop by occassion card 3"
+                    class="img-fluid shop_by_occassion_swiper_card_image"
+                  />
+                  <h2>Celebrations</h2>
+                  <h3>
+                    Classic styles for festive events and<br />special
+                    occasions.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div id="section9">
       <h5>DID YOU KNOW?</h5>
       <h2>Cotton Trivia</h2>
-      <img src="./public/cotton.png" alt="cotton" class="img-fluid" />
-
-      <img
-        src="./public/cotton-mobile.png"
-        alt="cotton"
-        class="img-fluid-mobile"
-      />
+      <picture>
+        <source srcset="./public/cotton-mobile.png" media="(max-width:900px)" />
+        <img src="./public/cotton.png" alt="cotton" class="img-fluid" />
+      </picture>
 
       <div class="row trivia-cotton-desc">
-        <div class="col-md-3 col-6 trivia-cotton-desc-item">
+        <div class="col-lg-3 col-6 trivia-cotton-desc-item">
           <h5>01</h5>
           <p>Cotton can absorb up to 27 times its weight in water</p>
         </div>
-        <div class="col-md-3 col-6 trivia-cotton-desc-item">
+        <div class="col-lg-3 col-6 trivia-cotton-desc-item">
           <h5>02</h5>
           <p>Cotton fibres are stronger when they are wet</p>
         </div>
-        <div class="col-md-3 col-6 trivia-cotton-desc-item">
+        <div class="col-lg-3 col-6 trivia-cotton-desc-item">
           <h5>03</h5>
           <p>India is the world's second-largest producer of cotton</p>
         </div>
-        <div class="col-md-3 col-6 trivia-cotton-desc-item">
+        <div class="col-lg-3 col-6 trivia-cotton-desc-item">
           <h5>04</h5>
           <p>
             Cotton is a major cash crop for many Indian farmers, supporting

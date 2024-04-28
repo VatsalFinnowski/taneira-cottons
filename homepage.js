@@ -298,9 +298,13 @@ document.addEventListener("DOMContentLoaded", function () {
   //   },
   // });
   var swiper2 = new Swiper(".shop-by-colorswiper", {
-    slidesPerView: "auto",
     // loop: "true",
     // spaceBetween: 30,
+    speed: 800,
+    // autoplay: {
+    //   delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
+    //   disableOnInteraction: false, // Continue autoplay after user interaction
+    // },
     pagination: {
       el: ".shop-by-color-swiper-pagination",
     },
@@ -318,17 +322,21 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 3,
         spaceBetween: 30,
       },
+      900: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
       // when window width is >= 640px
       1200: {
         slidesPerView: 3.5,
         spaceBetween: 40,
       },
       1400: {
-        slidesPerView: 3.75,
-        spaceBetween: 40,
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
       1600: {
-        slidesPerView: 4.5,
+        slidesPerView: 4,
         spaceBetween: 40,
       },
     },
@@ -346,6 +354,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   var swiper3 = new Swiper(".shop-by-categoryswiper", {
+    speed: 800,
     slidesPerView: "auto",
     centeredSlides: "true",
     autoplay: {
@@ -416,8 +425,6 @@ document.addEventListener("DOMContentLoaded", function () {
       speed: 800,
 
       allowTouchMove: false,
-      loop: true,
-      centeredSlides: "true",
       autoplay: {
         delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
         disableOnInteraction: false, // Continue autoplay after user interaction
@@ -480,6 +487,74 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+  const shopByOccassionSwiper = new Swiper(".shop_by_occassion_swiper", {
+    speed: 800,
+    loop: true,
+    centeredSlides: "true",
+    // autoplay: {
+    //   delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
+    //   disableOnInteraction: false, // Continue autoplay after user interaction
+    // },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+      },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      900: {
+        slidesPerView: 2.5,
+        spaceBetween: 40,
+      },
+
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
+
+  const shopByReelsSwiper = new Swiper(".shop_from_reels_body_swiper", {
+    speed: 800,
+    loop: true,
+    centeredSlides: "true",
+    autoplay: {
+      delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
+      disableOnInteraction: false, // Continue autoplay after user interaction
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+      },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 1.75,
+        spaceBetween: 0,
+      },
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 3.75,
+        spaceBetween: 50,
+      },
+      1600: {
+        slidesPerView: 4.75,
+        spaceBetween: 50,
+      },
+    },
+  });
 });
 
 document
