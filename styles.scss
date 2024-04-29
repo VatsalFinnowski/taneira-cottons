@@ -1,3 +1,5 @@
+@import "fun";
+
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 // @import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap";
@@ -8,6 +10,7 @@ $color_2: rgba(128, 128, 128, 1);
 $color_3: #000;
 $color_4: #333;
 $color_5: rgba(175, 130, 90, 1);
+$pink: #e6116d;
 $color_6: rgba(0, 0, 0, 1);
 $color_section_subtitle: #808080;
 $color_section_title: #2f251c;
@@ -827,9 +830,7 @@ body {
   //   position: relative;
   // }
 }
-// .custom-nav {
-//   padding-left: 5rem;
-// }
+
 .shop-bestsellers {
   padding-left: 5rem;
 }
@@ -942,6 +943,270 @@ body {
   }
 }
 
+.home-has-gradient {
+  background: #faeee6;
+  position: relative;
+
+  &:after,
+  &:before {
+    content: "";
+    height: rem(48);
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    @media screen and (min-width: 768px) {
+      height: rem(93);
+    }
+  }
+
+  &:before {
+    top: 0;
+    background: linear-gradient(180deg, #ffffff 0%, #faeee6 100%);
+  }
+
+  &:after {
+    bottom: 0;
+    background: linear-gradient(180deg, #faeee6 0%, #ffffff 100%);
+  }
+}
+.home-reviews {
+  padding: rem(80) 0;
+
+  @media screen and (min-width: 768px) {
+    padding: rem(100) 0;
+  }
+
+  .home__header {
+    &:before {
+      content: "";
+      display: block;
+      background-image: url("./public/review-slider/“.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
+      height: 40px;
+      width: 40px;
+      font-size: rem(27);
+      color: $pink;
+      text-align: center;
+      line-height: 1;
+      margin-bottom: rem(10);
+
+      @media screen and (min-width: 768px) {
+        font-size: rem(36);
+        margin-bottom: rem(44);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .swiper-arrows {
+      justify-content: flex-end;
+      grid-gap: rem(16);
+      margin-right: rem(20);
+
+      .swiper-button {
+        border: none;
+      }
+    }
+  }
+}
+
+.home-reviews__head {
+  display: flex;
+  border-bottom: 1px solid #f7e2d1;
+  margin-top: rem(28);
+
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: rem(12);
+
+  @media screen and (min-width: 768px) {
+    grid-gap: rem(52);
+    padding-bottom: rem(20);
+    justify-content: flex-end;
+    margin: rem(44) rem(104) rem(32);
+
+    .swiper-arrows {
+      grid-gap: rem(20);
+
+      .swiper-button {
+        border: none;
+      }
+    }
+  }
+}
+
+.home-reviews__total {
+  display: flex;
+  grid-gap: rem(23);
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-gap: rem(4);
+  }
+}
+
+.home-reviews__stars {
+  display: flex;
+  grid-gap: rem(2);
+
+  i {
+    font-size: rem(18);
+    color: $pink;
+    line-height: 1;
+  }
+}
+
+.home-reviews__item {
+  padding: rem(24);
+
+  min-width: rem(248);
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+
+  .home-reviews__stars {
+    i {
+    }
+  }
+
+  h5 {
+    font-family: $font-family_3;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+
+    color: #2b2b2b;
+
+    margin: rem(12) 0 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: rem(20);
+      line-height: rem(24);
+    }
+  }
+}
+
+.home-reviews__item__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    font-family: "IBM Plex Serif";
+    font-style: italic;
+    font-weight: 500;
+    font-size: rem(12px);
+    line-height: 160%;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin: 0;
+    color: #808080;
+  }
+
+  .home-reviews__stars {
+    i {
+      color: #e6e6e6;
+
+      &.active {
+        background: linear-gradient(73.3deg, #f4b224 40.06%, #ffffff 109.94%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: rem(24);
+      }
+    }
+  }
+}
+
+.home-reviews__product {
+  margin-top: rem(20px);
+
+  display: flex;
+  grid-gap: 1rem;
+
+  p {
+    font-weight: 400;
+    font-size: rem(14px);
+    line-height: 160%;
+
+    color: #555555;
+    margin-bottom: 4px;
+
+    @media screen and (min-width: 768px) {
+      max-width: rem(174);
+    }
+  }
+
+  h6 {
+    font-weight: 600;
+    font-size: rem(12px);
+    line-height: rem(19);
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    /* Primary/Pink/Pink 3 */
+
+    color: #e6116d;
+  }
+
+  img {
+    width: rem(62px);
+    height: rem(90px);
+    object-fit: cover;
+  }
+
+  .home-reviews__quote {
+    width: rem(62px);
+    height: rem(62px);
+
+    background: #fad7e0;
+    border-radius: rem(32px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+      content: "\e830";
+      font-family: "taneira-icons";
+
+      font-size: rem(15);
+      line-height: 1;
+      color: $pink;
+    }
+  }
+}
+
+.review-swiper {
+  @media screen and (min-width: 768px) {
+    padding: rem(0) rem(104);
+  }
+}
+
 // shop by occassion slider
 #shop_by_occassion {
   background-image: url("./public/shop-occassion/bg.png");
@@ -1050,7 +1315,6 @@ body {
     );
   }
 }
-
 // shop by occassion slider end
 #section9 {
   padding: 48px 0px 50px;

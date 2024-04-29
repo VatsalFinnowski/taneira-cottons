@@ -311,4 +311,26 @@ document.addEventListener("DOMContentLoaded", function () {
       // Add any other actions you want to perform when mouse leaves the slide
     });
   });
+
+  var reviewSwiper = new Swiper(".review-swiper", {
+    slidesPerView: 1,
+
+    navigation: {
+      nextEl: ".swiper-review-mob-button-prev",
+      prevEl: ".swiper-review-mob-button-next",
+    },
+    // pagination: {
+    //     el: '.home-category__pagination'
+    // },
+    breakpoints: {
+      900: {
+        slidesPerView: 2.5,
+        spaceBetween: 0,
+      },
+      navigation: {
+        nextEl: ".swiper-review-button-next",
+        prevEl: ".swiper-review-button-prev",
+      },
+    },
+  });
 });
