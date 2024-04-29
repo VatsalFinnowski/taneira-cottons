@@ -1,18 +1,6 @@
 const windowWidth = window.innerWidth;
 
 document.addEventListener("DOMContentLoaded", function () {
-  // var swiper0 = new Swiper(".shop-by-craft-swiper", {
-  //   slidesPerView: "auto",
-  //   loop: "true",
-  //   spaceBetween: 30,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //   },
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  // });
   var swiper2 = new Swiper(".shop-by-colorswiper", {
     // loop: "true",
     // spaceBetween: 30,
@@ -30,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1.75,
-        spaceBetween: 20,
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
       // when window width is >= 480px
       768: {
@@ -44,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       // when window width is >= 640px
       1200: {
-        slidesPerView: 3.5,
+        slidesPerView: 3,
         spaceBetween: 40,
       },
       1400: {
@@ -58,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   var swiper = new Swiper(".shop-bestsellers", {
+    speed: 800,
     slidesPerView: "auto",
     // loop: "true",
     spaceBetween: 20,
@@ -67,6 +56,30 @@ document.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 3.5,
+        spaceBetween: 10,
+      },
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 3.75,
+        spaceBetween: 40,
+      },
+      1600: {
+        slidesPerView: 4.75,
+        spaceBetween: 40,
+      },
     },
   });
   var swiper3 = new Swiper(".shop-by-categoryswiper", {
@@ -299,21 +312,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-document
-  .querySelector(".scroll-button.prev")
-  .addEventListener("click", function () {
-    document.querySelector(".flex-container").scrollBy({
-      left: -300, // Adjust based on the width of your slides
-      behavior: "smooth",
-    });
-  });
-
-// document
-//   .querySelector(".scroll-button.next")
-//   .addEventListener("click", function () {
-//     document.querySelector(".flex-container").scrollBy({
-//       left: 300, // Adjust based on the width of your slides
-//       behavior: "smooth",
-//     });
-//   });
