@@ -207,7 +207,7 @@ body {
   // aspect-ratio: 2/1;
   margin: 40px 0 32px;
   padding: 60px 0 80px;
-  background-image: url("./public/shop-by-craft/odisha-bg.png");
+  background-image: url("../public/shop-by-craft/odisha-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -349,7 +349,7 @@ body {
                   top: 50%;
                   left: 0%;
                   transform: translate(0%, -50%);
-                  content: url(./public/hero-slider/li-star.svg);
+                  content: url("../public/hero-slider/li-star.svg");
                   height: 100%;
                   width: 10px;
                 }
@@ -358,7 +358,7 @@ body {
                   top: 50%;
                   right: 0%;
                   transform: translate(0%, -50%);
-                  content: url(./public/hero-slider/li-star.svg);
+                  content: url("../public/hero-slider/li-star.svg");
                   height: 100%;
                   width: 10px;
                 }
@@ -634,7 +634,7 @@ body {
 
 #shop_from_reels {
   padding: 80px 0px;
-  background-image: url("./public/shop-reels/bg.png");
+  background-image: url("../public/shop-reels/bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -784,7 +784,7 @@ body {
             &::before {
               content: "";
               position: absolute;
-              background: url(./public/bestseller-tag.png);
+              background: url(../public/bestseller-tag.png);
               background-position: top right;
               width: 100%;
               right: 0;
@@ -969,7 +969,7 @@ body {
 }
 .home-reviews {
   padding: rem(80) 0;
-  background-image: url("./public/review-slider/bg.png");
+  background-image: url("../public/review-slider/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -984,7 +984,7 @@ body {
       position: absolute;
       content: "";
       display: block;
-      background-image: url("./public/review-slider/“.svg");
+      background-image: url("../public/review-slider/“.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 0 0;
@@ -1209,7 +1209,7 @@ body {
 
     &:after {
       content: "";
-      background-image: url("./public/review-slider/“.svg");
+      background-image: url("../public/review-slider/“.svg");
       width: 19px;
       height: 14px;
       background-position: center;
@@ -1257,7 +1257,7 @@ body {
 
 // shop by occassion slider
 #shop_by_occassion {
-  background-image: url("./public/shop-occassion/bg.png");
+  background-image: url("../public/shop-occassion/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1617,7 +1617,7 @@ body {
                 width: 10rem;
               }
               &::before {
-                background: url("./public/best-seller-mobile.png");
+                background: url("../public/best-seller-mobile.png");
                 background-repeat: no-repeat;
                 background-position: top left;
                 border-top-left-radius: 10px;
