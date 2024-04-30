@@ -633,6 +633,7 @@ body {
   font-weight: 500;
   margin-bottom: 0px;
   color: #fff;
+  letter-spacing: 1px;
 }
 #shop_from_reels .shop_from_reels_body .shop_from_reels_body_swiper .shop_from_reels_card .shop_from_reels_card_inner .reels-view-box-button {
   display: none;
@@ -1158,12 +1159,10 @@ body {
   font-size: 16px;
   color: #808080;
   display: none;
-  text-align: center;
 }
 #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .shop_by_occassion_swiper_card .shop_by_occassion_swiper_card_inner h2 {
   margin-top: 20px;
   font-size: 20px;
-  text-align: center;
 }
 #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .shop_by_occassion_swiper_card:hover {
   scale: 1;
@@ -1555,6 +1554,10 @@ body {
   #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .swiper-slide-active .shop_by_occassion_swiper_card h3 {
     display: block;
     font-size: 12px;
+    text-align: center;
+  }
+  #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .swiper-slide-active .shop_by_occassion_swiper_card h2 {
+    text-align: center;
   }
   #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .swiper-slide-active .shop_by_occassion_swiper_card:hover h2 {
     font-size: inherit;

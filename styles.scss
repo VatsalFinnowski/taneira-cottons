@@ -699,6 +699,7 @@ body {
               font-weight: 500;
               margin-bottom: 0px;
               color: #fff;
+              letter-spacing: 1px;
             }
           }
 
@@ -1326,13 +1327,13 @@ body {
             font-size: 16px;
             color: $color_section_subtitle;
             display: none;
-            text-align: center;
+            // text-align: center;
           }
           h2 {
             margin-top: 20px;
             // font-size: 28px;
             font-size: 20px;
-            text-align: center;
+            // text-align: center;
           }
         }
         &:hover {
@@ -1828,6 +1829,10 @@ body {
             h3 {
               display: block;
               font-size: 12px;
+              text-align: center;
+            }
+            h2 {
+              text-align: center;
             }
             &:hover {
               h2 {
