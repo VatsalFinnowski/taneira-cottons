@@ -1097,6 +1097,7 @@ body {
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-bottom: 0;
   }
 
   @media screen and (min-width: 768px) {
@@ -1318,11 +1319,13 @@ body {
             font-size: 16px;
             color: $color_section_subtitle;
             display: none;
+            text-align: center;
           }
           h2 {
             margin-top: 20px;
             // font-size: 28px;
             font-size: 20px;
+            text-align: center;
           }
         }
         &:hover {
@@ -1503,6 +1506,9 @@ body {
   h2 {
     font-size: 24px;
   }
+  h5 {
+    font-size: 11px;
+  }
 
   .grid-1 {
     flex: 0 0 100%;
@@ -1676,7 +1682,7 @@ body {
   #shop-by-category {
     .shop-by-categoryswiper {
       .swiper-wrapper {
-        height: 280px;
+        height: 240px;
       }
       .swiper-slide {
         gap: 8px;
@@ -1705,6 +1711,7 @@ body {
   }
   #section9 {
     margin: 40px 0 52px;
+    padding: 0;
     gap: 0px;
     h2 {
       margin-top: 8px;
@@ -1822,6 +1829,24 @@ body {
             }
           }
         }
+      }
+    }
+  }
+  .home-reviews {
+    padding: 40px 0 18px;
+    .home__header {
+      h6 {
+        font-size: 11px;
+      }
+    }
+  }
+  .review-swiper {
+    .swiper-buttons {
+      width: 110px;
+      .swiper-button-next,
+      .swiper-button-prev {
+        height: 36px;
+        width: 36px;
       }
     }
   }

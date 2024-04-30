@@ -963,6 +963,7 @@ body {
 @media screen and (max-width: 768px) {
   .home-reviews__item {
     width: 100%;
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1151,10 +1152,12 @@ body {
   font-size: 16px;
   color: #808080;
   display: none;
+  text-align: center;
 }
 #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .shop_by_occassion_swiper_card .shop_by_occassion_swiper_card_inner h2 {
   margin-top: 20px;
   font-size: 20px;
+  text-align: center;
 }
 #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .shop_by_occassion_swiper_card:hover {
   scale: 1;
@@ -1296,6 +1299,9 @@ body {
   h2 {
     font-size: 24px;
   }
+  h5 {
+    font-size: 11px;
+  }
   .grid-1 {
     flex: 0 0 100%;
     order: 1;
@@ -1426,7 +1432,7 @@ body {
     font-size: 16px;
   }
   #shop-by-category .shop-by-categoryswiper .swiper-wrapper {
-    height: 280px;
+    height: 240px;
   }
   #shop-by-category .shop-by-categoryswiper .swiper-slide {
     gap: 8px;
@@ -1447,6 +1453,7 @@ body {
   }
   #section9 {
     margin: 40px 0 52px;
+    padding: 0;
     gap: 0px;
   }
   #section9 h2 {
@@ -1545,5 +1552,19 @@ body {
   }
   #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .swiper-slide-active .shop_by_occassion_swiper_card:hover h2 {
     font-size: inherit;
+  }
+  .home-reviews {
+    padding: 40px 0 18px;
+  }
+  .home-reviews .home__header h6 {
+    font-size: 11px;
+  }
+  .review-swiper .swiper-buttons {
+    width: 110px;
+  }
+  .review-swiper .swiper-buttons .swiper-button-next,
+  .review-swiper .swiper-buttons .swiper-button-prev {
+    height: 36px;
+    width: 36px;
   }
 }/*# sourceMappingURL=styles.css.map */
