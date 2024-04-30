@@ -537,6 +537,7 @@ body {
     .custom-nav {
       padding-top: 20px;
       .nav {
+        transition: all 0.5s ease;
         flex-direction: column;
         .nav-link {
           border-bottom: 1px solid #eaeaea;
@@ -1499,16 +1500,10 @@ body {
   }
 }
 @media screen and (max-width: 800px) {
-  #shop-by-craft {
-    background-image: none;
-    padding: 0;
-  }
-  h5 {
-    font-size: 11px;
-  }
   h2 {
     font-size: 24px;
   }
+
   .grid-1 {
     flex: 0 0 100%;
     order: 1;
@@ -1526,6 +1521,20 @@ body {
     order: 1;
     text-align: center;
     order: 2;
+  }
+  #shop-by-craft {
+    background-image: none;
+    padding: 0;
+    .shop-by-craft-title {
+      h2 {
+        margin-top: 8px;
+        font-size: 32px;
+      }
+    }
+  }
+  #shop-by-craft h5 {
+    font-size: 11px;
+    letter-spacing: 2px;
   }
   #shop-by-color {
     .grid-1 {
@@ -1661,18 +1670,28 @@ body {
   .flex-container {
     width: 100vw;
   }
-  .shop-by-color-item-name {
-    font-size: 14px;
-  }
   .shop-by-color-item-price {
     font-size: 16px;
   }
   #shop-by-category {
     .shop-by-categoryswiper {
+      .swiper-wrapper {
+        height: 280px;
+      }
       .swiper-slide {
+        gap: 8px;
         img {
           width: 8.5rem;
           height: 8.5rem;
+        }
+        .shop-by-color-item-name {
+          margin-top: 0;
+          font-size: 12px;
+        }
+        &:hover {
+          .shop-by-color-item-name {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -1723,6 +1742,7 @@ body {
           .nav-link.active {
             // display: none;
             border-right: none;
+            border-bottom: none;
           }
         }
       }
@@ -1752,6 +1772,9 @@ body {
   }
   #shop_from_reels {
     padding: 41px 0px 52px;
+    .shop_from_reels_body {
+      margin-top: 20px;
+    }
   }
   #shop-bestsellers {
     padding: 32px 0px;

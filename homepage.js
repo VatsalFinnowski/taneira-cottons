@@ -129,16 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const swiper5 = new Swiper(".shop_by_craft_swiper_box_mobile_Swiper", {
       speed: 800,
       slidesPerView: 1,
-
-      // allowTouchMove: false,
-      loop: true,
-      // centeredSlides: "true",
-      autoplay: {
-        delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
-        disableOnInteraction: false, // Continue autoplay after user interaction
-      },
-      // loop: true,
-      // spaceBetween: 0, // Optional: add space between slides
       pagination: {
         el: ".swiper-pagination", // Ensure this element exists if you use pagination
         clickable: true,
