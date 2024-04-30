@@ -333,6 +333,7 @@ body {
             transform-style: preserve-3d;
             width: 100%;
             height: 100%;
+            transition: all 0.8s ease;
           }
           .shop_by_craft_swiper_second_card_back {
             position: absolute;
@@ -899,6 +900,7 @@ body {
       }
     }
     .swiper-slide {
+      transition: all 0.4s ease;
       &:hover {
         transform: scale(1.2);
         img {
@@ -958,6 +960,9 @@ body {
     @media screen and (min-width: 768px) {
       height: rem(93);
     }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
   }
 
   &:before {
@@ -972,13 +977,19 @@ body {
 }
 .home-reviews {
   padding: rem(80) 0;
+  background-image: url("./public/review-slider/bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media screen and (min-width: 768px) {
     padding: rem(100) 0;
   }
 
   .home__header {
+    position: relative;
     &:before {
+      position: absolute;
       content: "";
       display: block;
       background-image: url("./public/review-slider/“.svg");
@@ -992,11 +1003,22 @@ body {
       text-align: center;
       line-height: 1;
       margin-bottom: rem(10);
+      // top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%);
 
       @media screen and (min-width: 768px) {
         font-size: rem(36);
         margin-bottom: rem(44);
       }
+    }
+    h6 {
+      padding-top: 64px;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 8px;
+      text-align: center;
     }
   }
 
@@ -1025,9 +1047,10 @@ body {
 
   @media screen and (min-width: 768px) {
     grid-gap: rem(52);
-    padding-bottom: rem(20);
+    padding-bottom: 0;
     justify-content: flex-end;
-    margin: rem(44) rem(104) rem(32);
+
+    margin: 24px 0 32px;
 
     .swiper-arrows {
       grid-gap: rem(20);
@@ -1069,6 +1092,7 @@ body {
   padding: rem(24);
 
   min-width: rem(248);
+  display: inline-block;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -1191,8 +1215,13 @@ body {
     justify-content: center;
 
     &:after {
-      content: "\e830";
-      font-family: "taneira-icons";
+      content: "";
+      background-image: url("./public/review-slider/“.svg");
+      width: 19px;
+      height: 14px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
 
       font-size: rem(15);
       line-height: 1;
@@ -1202,6 +1231,32 @@ body {
 }
 
 .review-swiper {
+  .swiper-buttons {
+    margin-left: 54px;
+    position: relative;
+    // display: inline-block;
+    width: 130px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    // width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    // height: auto;
+    .swiper-button-next,
+    .swiper-button-prev {
+      height: 48px;
+      width: 48px;
+      position: relative;
+      top: 0;
+      margin-top: 0;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     padding: rem(0) rem(104);
   }
@@ -1246,6 +1301,8 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        scale: 0.9;
+        transition: all 0.8s ease;
         .shop_by_occassion_swiper_card_inner {
           width: 100%;
           .shop_by_occassion_swiper_card_image {
@@ -1268,6 +1325,7 @@ body {
           }
         }
         &:hover {
+          scale: 1;
           .shop_by_occassion_swiper_card_image {
             -webkit-box-shadow: 1px 25px 115px -48px rgba(132, 96, 63, 0.32);
             -moz-box-shadow: 1px 25px 115px -48px rgba(132, 96, 63, 0.32);
@@ -1721,14 +1779,23 @@ body {
     .shop_by_occassion_swiper_box {
       .shop_by_occassion_swiper {
         padding-bottom: 90px;
+        .shop_by_occassion_swiper_card {
+          scale: 1;
+        }
         .swiper-slide-active {
           scale: 1.1;
           .shop_by_occassion_swiper_card {
+            // scale: 1.1;
             .shop_by_occassion_swiper_card_inner {
             }
             h3 {
               display: block;
               font-size: 12px;
+            }
+            &:hover {
+              h2 {
+                font-size: inherit;
+              }
             }
           }
         }

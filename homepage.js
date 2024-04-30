@@ -316,20 +316,20 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
 
     navigation: {
-      nextEl: ".swiper-review-mob-button-prev",
-      prevEl: ".swiper-review-mob-button-next",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     // pagination: {
     //     el: '.home-category__pagination'
     // },
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
       900: {
         slidesPerView: 2.5,
         spaceBetween: 0,
-      },
-      navigation: {
-        nextEl: ".swiper-review-button-next",
-        prevEl: ".swiper-review-button-prev",
       },
     },
   });
