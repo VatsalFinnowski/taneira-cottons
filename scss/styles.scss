@@ -1,23 +1,6 @@
 @import "fun";
-
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-// @import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap";
-@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Hurricane&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap";
-$color_1: rgba(47, 37, 28, 1);
-$color_2: rgba(128, 128, 128, 1);
-$color_3: #000;
-$color_4: #333;
-$color_5: rgba(175, 130, 90, 1);
-$pink: #e6116d;
-$color_6: rgba(0, 0, 0, 1);
-$color_section_subtitle: #808080;
-$color_section_title: #2f251c;
-$font-family_1: "IBM Plex Sans", sans-serif;
-$font-family_2: Helvetica Neue, Helvetica, Arial, sans-serif;
-$font-family_3: "Space Grotesk", sans-serif;
-$background-color_1: rgba(255, 255, 255, 0.8);
+@import "var";
+@import "font";
 
 /* Container setup for the flip effect */
 /* Basic setup */

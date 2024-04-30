@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Hurricane&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap";
+@font-face {
+  font-family: "brightgrotesk-book-italic";
+  src: url("../public/fonts/brightgrotesk-bookitalic-webfont.woff2") format("woff2"), url("../public/font/brightgrotesk-bookitalic-webfont.woff") format("woff"), url("../public/font/brightgrotesk-bookitalic-webfont.svg#brightgrotesk-boouploadedfile") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Container setup for the flip effect */
 /* Basic setup */
 /* Ensuring .craft-name is unaffected */
@@ -22,7 +28,7 @@ h1 {
 h2 {
   padding: 0px;
   margin: 0px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "brightgrotesk-book-italic", sans-serif;
   font-size: 36px;
   font-style: italic;
   font-weight: 400;
@@ -304,7 +310,7 @@ body {
 }
 #shop-by-craft .shop_by_craft_slider_box .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card h2 {
   margin-top: 20px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "brightgrotesk-book-italic", sans-serif;
   text-transform: capitalize;
   font-size: 20px;
   font-style: italic;
@@ -482,7 +488,7 @@ body {
   text-align: leftr;
   padding-top: 10px;
   font-size: 20px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "brightgrotesk-book-italic", sans-serif;
   font-style: italic;
 }
 
@@ -507,7 +513,7 @@ body {
   border-bottom: 1px solid #eaeaea;
   border-right: 1px solid #eaeaea;
   padding: 33px 1rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "brightgrotesk-book-italic", sans-serif;
   font-size: 16px;
   color: rgb(47, 37, 28);
   font-style: italic;
@@ -821,7 +827,7 @@ body {
   gap: 1rem;
 }
 .shop-by-categoryswiper .swiper-slide .shop-by-color-item-name {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "brightgrotesk-book-italic", sans-serif;
   font-size: 20px;
   font-style: italic;
 }
@@ -979,7 +985,7 @@ body {
   }
 }
 .home-reviews__item h5 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "brightgrotesk-book-italic", sans-serif;
   font-style: italic;
   font-size: 16px;
   line-height: 120%;
@@ -1211,7 +1217,7 @@ body {
   padding: 0px 100px;
 }
 #section9 .trivia-cotton-desc .trivia-cotton-desc-item h5 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "brightgrotesk-book-italic", sans-serif;
   font-size: 24px;
   font-style: italic;
   color: #af825a;
