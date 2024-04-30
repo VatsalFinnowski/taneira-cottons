@@ -84,13 +84,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   var swiper3 = new Swiper(".shop-by-categoryswiper", {
     speed: 800,
-    slidesPerView: "auto",
-    centeredSlides: "true",
+    // slidesPerView: "auto",
+    // centeredSlides: "true",
     // autoplay: {
     //   delay: 2500, // Delay in milliseconds between slides (2500ms = 2.5s)
     //   disableOnInteraction: false, // Continue autoplay after user interaction
     // },
-    loop: true,
+    // loop: true,
     spaceBetween: 30, // Optional: add space between slides
     pagination: {
       el: ".swiper-pagination", // Ensure this element exists if you use pagination
@@ -108,8 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       // when window width is >= 640px
       1200: {
-        slidesPerView: 5,
-        spaceBetween: 40,
+        slidesPerView: 5.5,
+        spaceBetween: 20,
       },
       //   1400: {
       //     slidesPerView: 3.75,

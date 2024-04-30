@@ -234,6 +234,7 @@ body {
 }
 #shop-by-craft .shop-by-craft-title h2 {
   margin-top: 12px;
+  letter-spacing: -1px;
 }
 #shop-by-craft .shop_by_craft_swiper {
   margin-top: 32px;
@@ -296,15 +297,13 @@ body {
 #shop-by-craft .shop_by_craft_slider_box .shop_by_craft_slider_images {
   margin-top: 30px;
 }
-#shop-by-craft .shop_by_craft_slider_box .shop_by_craft_slider_images .swiper-slide-active .shop_by_craft_swiper_second_card {
-  scale: 1.1;
-}
 #shop-by-craft .shop_by_craft_slider_box .shop_by_craft_slider_images .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #shop-by-craft .shop_by_craft_slider_box .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card h2 {
+  margin-top: 20px;
   font-family: "Space Grotesk", sans-serif;
   text-transform: capitalize;
   font-size: 20px;
@@ -372,6 +371,12 @@ body {
 }
 #shop-by-craft .shop_by_craft_slider_box .shop_by_craft_slider_images .swiper-slide .shop_by_craft_swiper_second_card:hover .shop_by_craft_swiper_second_card_inner {
   transform: rotateY(180deg);
+}
+#shop-by-craft .shop_by_craft_slider_box .shop_by_craft_slider_images .swiper-slide-active .shop_by_craft_swiper_second_card {
+  scale: 1.1;
+}
+#shop-by-craft .shop_by_craft_slider_box .shop_by_craft_slider_images .swiper-slide-active .shop_by_craft_swiper_second_card h2 {
+  font-size: 28px;
 }
 #shop-by-craft .shop_by_craft_swiper_box_mobile {
   position: relative;
@@ -817,6 +822,7 @@ body {
 .shop-by-categoryswiper .swiper-slide .shop-by-color-item-name {
   font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
+  font-style: italic;
 }
 
 .home-has-gradient {

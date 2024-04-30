@@ -234,6 +234,7 @@ body {
     text-align: center;
     h2 {
       margin-top: 12px;
+      letter-spacing: -1px;
     }
   }
   .shop_by_craft_swiper {
@@ -306,17 +307,14 @@ body {
     }
     .shop_by_craft_slider_images {
       margin-top: 30px;
-      .swiper-slide-active {
-        .shop_by_craft_swiper_second_card {
-          scale: 1.1;
-        }
-      }
+
       .swiper-slide {
         display: flex;
         align-items: center;
         justify-content: center;
         .shop_by_craft_swiper_second_card {
           h2 {
+            margin-top: 20px;
             font-family: $font-family_3;
             text-transform: capitalize;
             font-size: 20px;
@@ -389,6 +387,14 @@ body {
             .shop_by_craft_swiper_second_card_inner {
               transform: rotateY(180deg);
             }
+          }
+        }
+      }
+      .swiper-slide-active {
+        .shop_by_craft_swiper_second_card {
+          scale: 1.1;
+          h2 {
+            font-size: 28px;
           }
         }
       }
@@ -942,6 +948,7 @@ body {
     .shop-by-color-item-name {
       font-family: $font-family_3;
       font-size: 20px;
+      font-style: italic;
     }
   }
 }
