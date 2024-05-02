@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       0: {
         slidesPerView: 2,
-        spaceBetween: 10,
+        spaceBetween: 5,
       },
       // when window width is >= 480px
       768: {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // when window width is >= 640px
       1200: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 20,
       },
       1400: {
         slidesPerView: 3,
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       1600: {
         slidesPerView: 4,
-        spaceBetween: 40,
+        spaceBetween: 20,
       },
     },
   });
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 1.85,
         spaceBetween: 10,
       },
       // when window width is >= 480px
@@ -98,8 +98,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       0: {
-        slidesPerView: 3,
-        spaceBetween: 90,
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+        centeredSlides: true,
+        loop: true,
       },
       // when window width is >= 480px
       768: {
@@ -108,8 +110,10 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       // when window width is >= 640px
       1200: {
-        slidesPerView: 5.5,
-        spaceBetween: 20,
+        slidesPerView: 5.2,
+        spaceBetween: 30,
+        centeredSlides: false,
+        loop: false,
       },
       //   1400: {
       //     slidesPerView: 3.75,
@@ -215,8 +219,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // },
     breakpoints: {
       0: {
-        slidesPerView: 1.4,
-        spaceBetween: 40,
+        slidesPerView: 1.2,
+        spaceBetween: 0,
       },
       // when window width is >= 480px
       768: {
@@ -240,10 +244,10 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 800,
     loop: true,
     centeredSlides: "true",
-    autoplay: {
-      delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
-      disableOnInteraction: false, // Continue autoplay after user interaction
-    },
+    // autoplay: {
+    //   delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
+    //   disableOnInteraction: false, // Continue autoplay after user interaction
+    // },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
