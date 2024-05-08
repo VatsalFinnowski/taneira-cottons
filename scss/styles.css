@@ -169,13 +169,6 @@ body {
 }
 .hero_section .hero_section_main_image {
   width: 100%;
-  height: auto;
-  max-height: 470px;
-  aspect-ratio: 72/25;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 .hero_section .hero_section_body {
   position: absolute;
@@ -490,7 +483,7 @@ body {
 }
 
 .shop-by-color-title {
-  padding-left: 6rem;
+  padding-left: 5rem;
 }
 .shop-by-color-title h2 {
   margin-top: 12px;
@@ -500,8 +493,11 @@ body {
   padding: 32px 0px 48px;
 }
 #shop-by-color .shop-by-color-tabsnav {
-  padding-left: 100px;
+  padding-left: 5rem;
   padding-top: 32px;
+}
+#shop-by-color .shop-by-color-tabsnav .col {
+  padding: 0;
 }
 #shop-by-color .shop-by-color-tabsnav .custom-nav {
   padding: 17px 0px;
@@ -716,6 +712,8 @@ body {
   margin-top: 32px;
   width: 100%;
   height: 100%;
+  padding-left: 5rem;
+  padding-right: 3rem;
 }
 #shop-bestsellers .swiper .swiper-wrapper .swiper-slide .shop-by-color-card {
   transition: all 0.5s ease;
@@ -754,10 +752,6 @@ body {
 }
 #shop-bestsellers .swiper .swiper-wrapper .swiper-slide .shop-by-color-card img {
   border-radius: 12px 0px 12px 0px;
-}
-
-.shop-bestsellers {
-  padding-left: 5rem;
 }
 
 .icon-box-svg {
@@ -817,10 +811,10 @@ body {
   padding-right: 20px;
 }
 #shop-by-category .shop-by-categoryswiper .swiper .swiper-wrapper img {
-  transition: all 0.4s ease;
+  transition: all 0.8s ease;
 }
 #shop-by-category .shop-by-categoryswiper .swiper-slide {
-  transition: all 0.4s ease;
+  transition: all 0.8s ease;
 }
 #shop-by-category .shop-by-categoryswiper .swiper-slide:hover {
   transform: scale(1.1);
@@ -833,6 +827,7 @@ body {
   font-size: 28px;
 }
 #shop-by-category .shop-by-categoryswiper .swiper-slide img {
+  transition: all 0.5s ease;
   max-width: 100%;
   width: 100%;
   height: auto;
@@ -1300,6 +1295,17 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 1400px) {
+  #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .shop_by_occassion_swiper_card:hover h2 {
+    font-size: 26px;
+  }
+  #shop_by_occassion .shop_by_occassion_swiper_box .shop_by_occassion_swiper .swiper-wrapper .swiper-slide-active .shop_by_occassion_swiper_card h2 {
+    font-size: 26px;
+  }
+  #shop-by-color .shop-by-color-tabsnav .custom-nav .nav .nav-link.active {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 1200px) {
   #shop-by-craft .shop_by_craft_slider_box {
     padding-left: 40px;

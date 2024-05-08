@@ -40,10 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 4,
         spaceBetween: 20,
       },
-      1300: {
-        slidesPerView: 3,
+      1201: {
+        slidesPerView: 2.5,
         spaceBetween: 20,
       },
+      1300: {
+        slidesPerView: 2.75,
+        spaceBetween: 20,
+      },
+
       1400: {
         slidesPerView: 3,
         spaceBetween: 24,
@@ -86,10 +91,14 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 4,
         spaceBetween: 40,
       },
-      1400: {
+      1300: {
         slidesPerView: 3.75,
         spaceBetween: 40,
       },
+      // 1400: {
+      //   slidesPerView: 3.75,
+      //   spaceBetween: 40,
+      // },
       1600: {
         slidesPerView: 4.75,
         spaceBetween: 40,
@@ -244,6 +253,10 @@ document.addEventListener("DOMContentLoaded", function () {
           slidesPerView: 4.7,
           spaceBetween: 0,
         },
+        1300: {
+          slidesPerView: 5,
+          spaceBetween: 0,
+        },
         1400: {
           slidesPerView: 5.7,
           spaceBetween: 0,
@@ -280,14 +293,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Function to pause all videos in a given slide
+  function pauseVideosInSlide(slide) {
+    const videos = slide.querySelectorAll("video");
+    videos.forEach((video) => {
+      if (!video.paused) {
+        video.pause();
+      }
+    });
+  }
+
+  function playVideosInSlide(slide) {
+    const videos = slide.querySelectorAll("video");
+    videos.forEach((video) => {
+      video.currentTime = 0; // Reset video to the beginning
+      video.play();
+    });
+  }
+
   var shopByReelsSwiper = new Swiper(".shop_from_reels_body_swiper", {
     speed: 800,
     loop: true,
     centeredSlides: "true",
-    // autoplay: {
-    //   delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
-    //   disableOnInteraction: false, // Continue autoplay after user interaction
-    // },
     navigation: {
       nextEl: ".shop_from_reels_nav_next",
       prevEl: ".shop_from_reels_nav_prev",
@@ -312,12 +339,28 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 30,
       },
       1300: {
-        slidesPerView: 4.3,
+        slidesPerView: 4.5,
         spaceBetween: 30,
       },
       1600: {
         slidesPerView: 4.75,
         spaceBetween: 50,
+      },
+    },
+    on: {
+      slideChange: function () {
+        const currentSlide = this.slides[this.activeIndex];
+        playVideosInSlide(currentSlide);
+      },
+      slidePrevTransitionStart: function () {
+        // Pause videos in the current slide
+        const currentSlide = this.slides[this.previousIndex];
+        pauseVideosInSlide(currentSlide);
+      },
+      slideNextTransitionStart: function () {
+        // Pause videos in the current slide
+        const currentSlide = this.slides[this.nextIndex];
+        pauseVideosInSlide(currentSlide);
       },
     },
   });
