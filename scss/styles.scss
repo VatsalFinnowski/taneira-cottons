@@ -525,7 +525,7 @@ body {
     padding-left: 5rem;
     // padding-top: 2rem;
     padding-top: 32px;
-    .col{
+    .col {
       padding: 0;
     }
     .custom-nav {
@@ -2269,9 +2269,24 @@ body {
       .do_you_know_section_video {
         width: 100%;
         overflow: hidden;
+        aspect-ratio: auto;
         video {
           object-fit: cover;
           height: 168px;
+          z-index: 4;
+          position: relative;
+        }
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 30px;
+          top: -10px;
+          left: 0px;
+          background: #fff;
+          z-index: 5;
+          border: none;
         }
       }
     }
