@@ -1,18 +1,8 @@
-// import Swiper  from 'swiper';
-// Swiper.use([Navigation]);
 const windowWidth = window.innerWidth;
-
-// Swiper.use([Navigation]);
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper2 = new Swiper(".shop-by-colorswiper", {
-    // loop: "true",
-    // spaceBetween: 30,
     speed: 800,
-    // autoplay: {
-    //   delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
-    //   disableOnInteraction: false, // Continue autoplay after user interaction
-    // },
     pagination: {
       el: ".shop-by-color-swiper-pagination",
       clickable: true,
@@ -62,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".shop-bestsellers", {
     speed: 800,
     slidesPerView: "auto",
-    // loop: "true",
+
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
@@ -95,10 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 3.75,
         spaceBetween: 40,
       },
-      // 1400: {
-      //   slidesPerView: 3.75,
-      //   spaceBetween: 40,
-      // },
+
       1600: {
         slidesPerView: 4.75,
         spaceBetween: 40,
@@ -107,13 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   var swiper3 = new Swiper(".shop-by-categoryswiper", {
     speed: 800,
-    // slidesPerView: "auto",
-    // centeredSlides: "true",
-    // autoplay: {
-    //   delay: 2500, // Delay in milliseconds between slides (2500ms = 2.5s)
-    //   disableOnInteraction: false, // Continue autoplay after user interaction
-    // },
-    // loop: true,
+
     spaceBetween: 30, // Optional: add space between slides
     pagination: {
       el: ".swiper-pagination", // Ensure this element exists if you use pagination
@@ -138,10 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
         centeredSlides: false,
         loop: false,
       },
-      //   1400: {
-      //     slidesPerView: 3.75,
-      //     spaceBetween: 40,
-      //   },
+
       1600: {
         slidesPerView: 7,
         spaceBetween: 40,
@@ -153,10 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 800,
     loop: true,
     centeredSlides: "true",
-    // autoplay: {
-    //   delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
-    //   disableOnInteraction: false, // Continue autoplay after user interaction
-    // },
+
     breakpoints: {
       0: {
         slidesPerView: 1.2,
@@ -187,9 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".home-reviews-nav-next",
       prevEl: ".home-reviews-nav-prev",
     },
-    // pagination: {
-    //     el: '.home-category__pagination'
-    // },
+
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -216,20 +189,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   } else {
     const swiper4 = new Swiper(".shop_by_craft_swiper_box", {
-      // observer: true,
-      // observeParents: true,
       speed: 800,
       loop: true,
       allowTouchMove: false,
-      // autoplay: {
-      //   delay: 3500, // Delay in milliseconds between slides (2500ms = 2.5s)
-      //   disableOnInteraction: false, // Continue autoplay after user interaction
-      // },
+
       spaceBetween: 0, // Optional: add space between slides
-      // pagination: {
-      //   el: ".swiper-pagination", // Ensure this element exists if you use pagination
-      //   clickable: true,
-      // },
+
       navigation: {
         nextEl: ".shop_by_craft_nav_next",
         prevEl: ".shop_by_craft_nav_prev",
@@ -280,16 +245,8 @@ document.addEventListener("DOMContentLoaded", function () {
           setTimeout(() => {
             shopByCraftSwiperContainer.classList.remove("transition-effect");
           }, 500); // Duration of the transition in milliseconds
-          //   console.log(
-          //     activeSlideContent,
-          //     activeSlideDataInfo,
-          //     shopByCraftSwiperContainer.style.backgroundImage,
-          //     "swiper initialized"
-          //   );
-          //   swiper.update();
         },
       },
-      //   modules: [Navigation],
     });
   }
 
@@ -372,22 +329,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var imageSliderBox = section.querySelector(".shop_by_craft_slider_images");
   var currentSlide = imageSliderBox.querySelector(".swiper-slide-active");
-  // console.log(currentSlide, "currentslide")
 
-  // Loop through each slide
   slides.forEach(function (slide) {
-    // Add mouseenter event listener
     slide.addEventListener("mouseenter", function () {
-      // console.log("Mouse entered:", this.dataset.info);
       shopByCraftSwiperContainer.style.backgroundImage = `url(${this.dataset.info})`;
-      // Add any other actions you want to perform when mouse enters the slide
     });
 
-    // Add mouseleave event listener
     slide.addEventListener("mouseleave", function () {
-      // console.log("Mouse left:", this.dataset.info);
       shopByCraftSwiperContainer.style.backgroundImage = `url(${currentSlide.dataset.info})`;
-      // Add any other actions you want to perform when mouse leaves the slide
     });
   });
 });
@@ -417,12 +366,10 @@ function centerNavLink(navLink) {
       const scrollTo =
         navLinkLeft - (containerWidth - navLinkWidth) / 2 - navScrollLeft;
 
-      // Add smooth transition to scrollLeft property
       navContainer.style.transition = "scroll-left 0.3s ease-in-out";
 
       navContainer.scrollLeft += scrollTo;
 
-      // Remove transition after the transition completes
       setTimeout(() => {
         navContainer.style.transition = "";
       }, 300);
