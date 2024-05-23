@@ -11,21 +11,51 @@
 /* Container setup for the flip effect */
 /* Basic setup */
 /* Ensuring .craft-name is unaffected */
-* {
+.hero_section *,
+#shop-by-craft *,
+#shop-by-color *,
+#shop_from_reels *,
+.home-reviews *,
+#shop-bestsellers *,
+#shop-by-category *,
+#shop_by_occassion *,
+#do_you_know_section * {
   box-sizing: border-box;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-*::-webkit-scrollbar {
+.hero_section *::-webkit-scrollbar,
+#shop-by-craft *::-webkit-scrollbar,
+#shop-by-color *::-webkit-scrollbar,
+#shop_from_reels *::-webkit-scrollbar,
+.home-reviews *::-webkit-scrollbar,
+#shop-bestsellers *::-webkit-scrollbar,
+#shop-by-category *::-webkit-scrollbar,
+#shop_by_occassion *::-webkit-scrollbar,
+#do_you_know_section *::-webkit-scrollbar {
   display: none;
 }
-
-h1 {
+.hero_section h1,
+#shop-by-craft h1,
+#shop-by-color h1,
+#shop_from_reels h1,
+.home-reviews h1,
+#shop-bestsellers h1,
+#shop-by-category h1,
+#shop_by_occassion h1,
+#do_you_know_section h1 {
   padding: 0px;
   margin: 0px;
 }
-
-h2 {
+.hero_section h2,
+#shop-by-craft h2,
+#shop-by-color h2,
+#shop_from_reels h2,
+.home-reviews h2,
+#shop-bestsellers h2,
+#shop-by-category h2,
+#shop_by_occassion h2,
+#do_you_know_section h2 {
   padding: 0px;
   margin: 0px;
   font-family: "brightgrotesk-book-italic", sans-serif;
@@ -35,18 +65,39 @@ h2 {
   margin: 0;
   color: rgb(47, 37, 28);
 }
-
-h3 {
+.hero_section h3,
+#shop-by-craft h3,
+#shop-by-color h3,
+#shop_from_reels h3,
+.home-reviews h3,
+#shop-bestsellers h3,
+#shop-by-category h3,
+#shop_by_occassion h3,
+#do_you_know_section h3 {
   padding: 0px;
   margin: 0px;
 }
-
-h4 {
+.hero_section h4,
+#shop-by-craft h4,
+#shop-by-color h4,
+#shop_from_reels h4,
+.home-reviews h4,
+#shop-bestsellers h4,
+#shop-by-category h4,
+#shop_by_occassion h4,
+#do_you_know_section h4 {
   padding: 0px;
   margin: 0px;
 }
-
-h5 {
+.hero_section h5,
+#shop-by-craft h5,
+#shop-by-color h5,
+#shop_from_reels h5,
+.home-reviews h5,
+#shop-bestsellers h5,
+#shop-by-category h5,
+#shop_by_occassion h5,
+#do_you_know_section h5 {
   padding: 0px;
   margin: 0px;
   margin: 0;
@@ -57,13 +108,27 @@ h5 {
   color: rgb(128, 128, 128);
   letter-spacing: 1px;
 }
-
-p {
+.hero_section p,
+#shop-by-craft p,
+#shop-by-color p,
+#shop_from_reels p,
+.home-reviews p,
+#shop-bestsellers p,
+#shop-by-category p,
+#shop_by_occassion p,
+#do_you_know_section p {
   padding: 0px;
   margin: 0px;
 }
-
-a {
+.hero_section a,
+#shop-by-craft a,
+#shop-by-color a,
+#shop_from_reels a,
+.home-reviews a,
+#shop-bestsellers a,
+#shop-by-category a,
+#shop_by_occassion a,
+#do_you_know_section a {
   padding: 0px;
   margin: 0px;
   color: rgb(47, 37, 28);
@@ -71,18 +136,39 @@ a {
   font-family: "IBM Plex Sans", sans-serif;
   letter-spacing: 1px;
 }
-
-li {
+.hero_section li,
+#shop-by-craft li,
+#shop-by-color li,
+#shop_from_reels li,
+.home-reviews li,
+#shop-bestsellers li,
+#shop-by-category li,
+#shop_by_occassion li,
+#do_you_know_section li {
   padding: 0px;
   margin: 0px;
 }
-
-ul {
+.hero_section ul,
+#shop-by-craft ul,
+#shop-by-color ul,
+#shop_from_reels ul,
+.home-reviews ul,
+#shop-bestsellers ul,
+#shop-by-category ul,
+#shop_by_occassion ul,
+#do_you_know_section ul {
   padding: 0px;
   margin: 0px;
 }
-
-.a-link {
+.hero_section .a-link,
+#shop-by-craft .a-link,
+#shop-by-color .a-link,
+#shop_from_reels .a-link,
+.home-reviews .a-link,
+#shop-bestsellers .a-link,
+#shop-by-category .a-link,
+#shop_by_occassion .a-link,
+#do_you_know_section .a-link {
   display: flex;
   justify-content: end;
   align-items: flex-end;
@@ -92,8 +178,15 @@ ul {
   padding-right: 6rem;
   gap: 10px;
 }
-
-body {
+.hero_section body,
+#shop-by-craft body,
+#shop-by-color body,
+#shop_from_reels body,
+.home-reviews body,
+#shop-bestsellers body,
+#shop-by-category body,
+#shop_by_occassion body,
+#do_you_know_section body {
   background: rgba(255, 255, 255, 0.5254901961);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #000;
@@ -101,8 +194,15 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
-
-.swiper-buttons {
+.hero_section .swiper-buttons,
+#shop-by-craft .swiper-buttons,
+#shop-by-color .swiper-buttons,
+#shop_from_reels .swiper-buttons,
+.home-reviews .swiper-buttons,
+#shop-bestsellers .swiper-buttons,
+#shop-by-category .swiper-buttons,
+#shop_by_occassion .swiper-buttons,
+#do_you_know_section .swiper-buttons {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -113,8 +213,15 @@ body {
   width: 90%;
   justify-content: space-around;
 }
-
-.swiper-button-prev {
+.hero_section .swiper-button-prev,
+#shop-by-craft .swiper-button-prev,
+#shop-by-color .swiper-button-prev,
+#shop_from_reels .swiper-button-prev,
+.home-reviews .swiper-button-prev,
+#shop-bestsellers .swiper-button-prev,
+#shop-by-category .swiper-button-prev,
+#shop_by_occassion .swiper-button-prev,
+#do_you_know_section .swiper-button-prev {
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -122,7 +229,15 @@ body {
   opacity: 1;
   box-shadow: 0px 2px 4px rgb(128, 128, 128);
 }
-.swiper-button-prev::after {
+.hero_section .swiper-button-prev::after,
+#shop-by-craft .swiper-button-prev::after,
+#shop-by-color .swiper-button-prev::after,
+#shop_from_reels .swiper-button-prev::after,
+.home-reviews .swiper-button-prev::after,
+#shop-bestsellers .swiper-button-prev::after,
+#shop-by-category .swiper-button-prev::after,
+#shop_by_occassion .swiper-button-prev::after,
+#do_you_know_section .swiper-button-prev::after {
   color: #000;
   width: -moz-fit-content;
   width: fit-content;
@@ -132,8 +247,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.swiper-button-next {
+.hero_section .swiper-button-next,
+#shop-by-craft .swiper-button-next,
+#shop-by-color .swiper-button-next,
+#shop_from_reels .swiper-button-next,
+.home-reviews .swiper-button-next,
+#shop-bestsellers .swiper-button-next,
+#shop-by-category .swiper-button-next,
+#shop_by_occassion .swiper-button-next,
+#do_you_know_section .swiper-button-next {
   width: 54px;
   height: 54px;
   border-radius: 50%;
@@ -141,7 +263,15 @@ body {
   opacity: 1;
   box-shadow: 0px 2px 4px rgb(128, 128, 128);
 }
-.swiper-button-next::after {
+.hero_section .swiper-button-next::after,
+#shop-by-craft .swiper-button-next::after,
+#shop-by-color .swiper-button-next::after,
+#shop_from_reels .swiper-button-next::after,
+.home-reviews .swiper-button-next::after,
+#shop-bestsellers .swiper-button-next::after,
+#shop-by-category .swiper-button-next::after,
+#shop_by_occassion .swiper-button-next::after,
+#do_you_know_section .swiper-button-next::after {
   color: #000;
   width: -moz-fit-content;
   width: fit-content;
@@ -151,8 +281,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.icon-box-container {
+.hero_section .icon-box-container,
+#shop-by-craft .icon-box-container,
+#shop-by-color .icon-box-container,
+#shop_from_reels .icon-box-container,
+.home-reviews .icon-box-container,
+#shop-bestsellers .icon-box-container,
+#shop-by-category .icon-box-container,
+#shop_by_occassion .icon-box-container,
+#do_you_know_section .icon-box-container {
   transition: all 0.5s ease;
   gap: 1rem;
   width: -moz-max-content;
@@ -507,6 +644,8 @@ body {
   flex-direction: column;
 }
 #shop-by-color .shop-by-color-tabsnav .custom-nav .nav .nav-link {
+  border: none;
+  background: transparent;
   border-bottom: 1px solid #eaeaea;
   border-right: 1px solid #eaeaea;
   padding: 33px 0px;
@@ -1382,35 +1521,83 @@ body {
   }
 }
 @media screen and (max-width: 800px) {
-  .shop-by-color-title {
-    padding-left: 0;
-  }
-  a {
+  .hero_section a,
+  #shop-by-craft a,
+  #shop-by-color a,
+  #shop_from_reels a,
+  .home-reviews a,
+  #shop-bestsellers a,
+  #shop-by-category a,
+  #shop_by_occassion a,
+  #do_you_know_section a {
     font-size: 12px;
   }
-  h2 {
+  .hero_section h2,
+  #shop-by-craft h2,
+  #shop-by-color h2,
+  #shop_from_reels h2,
+  .home-reviews h2,
+  #shop-bestsellers h2,
+  #shop-by-category h2,
+  #shop_by_occassion h2,
+  #do_you_know_section h2 {
     font-size: 24px;
   }
-  h5 {
+  .hero_section h5,
+  #shop-by-craft h5,
+  #shop-by-color h5,
+  #shop_from_reels h5,
+  .home-reviews h5,
+  #shop-bestsellers h5,
+  #shop-by-category h5,
+  #shop_by_occassion h5,
+  #do_you_know_section h5 {
     font-size: 11px;
   }
-  .grid-1 {
+  .hero_section .grid-1,
+  #shop-by-craft .grid-1,
+  #shop-by-color .grid-1,
+  #shop_from_reels .grid-1,
+  .home-reviews .grid-1,
+  #shop-bestsellers .grid-1,
+  #shop-by-category .grid-1,
+  #shop_by_occassion .grid-1,
+  #do_you_know_section .grid-1 {
     flex: 0 0 100%;
     order: 1;
     text-align: center;
   }
-  .grid-2 {
+  .hero_section .grid-2,
+  #shop-by-craft .grid-2,
+  #shop-by-color .grid-2,
+  #shop_from_reels .grid-2,
+  .home-reviews .grid-2,
+  #shop-bestsellers .grid-2,
+  #shop-by-category .grid-2,
+  #shop_by_occassion .grid-2,
+  #do_you_know_section .grid-2 {
     flex: 0 0 100%;
     order: 1;
     text-align: center;
     order: 3;
     text-align: center;
   }
-  .grid-3 {
+  .hero_section .grid-3,
+  #shop-by-craft .grid-3,
+  #shop-by-color .grid-3,
+  #shop_from_reels .grid-3,
+  .home-reviews .grid-3,
+  #shop-bestsellers .grid-3,
+  #shop-by-category .grid-3,
+  #shop_by_occassion .grid-3,
+  #do_you_know_section .grid-3 {
     flex: 0 0 100%;
     order: 1;
     text-align: center;
     order: 2;
+  }
+  .shop-by-color-title {
+    padding-left: 0;
   }
   #shop-by-craft {
     background-image: none;
@@ -1653,7 +1840,7 @@ body {
     padding: 0px 20px;
   }
   #shop-bestsellers .shop-bestsellers {
-    padding: 20px 24px 0;
+    padding: 20px 9px 0;
     margin-top: 0;
   }
   #shop-bestsellers .icon-box-container {

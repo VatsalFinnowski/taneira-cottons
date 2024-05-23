@@ -5,143 +5,153 @@
 /* Container setup for the flip effect */
 /* Basic setup */
 /* Ensuring .craft-name is unaffected */
-* {
-  box-sizing: border-box;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
+
+.hero_section,
+#shop-by-craft,
+#shop-by-color,
+#shop_from_reels,
+.home-reviews,
+#shop-bestsellers,
+#shop-by-category,
+#shop_by_occassion,
+#do_you_know_section {
+  * {
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  h1 {
+    padding: 0px;
+    margin: 0px;
+  }
+  h2 {
+    padding: 0px;
+    margin: 0px;
+    font-family: $font-family_3;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+    color: $color_1;
+  }
+  h3 {
+    padding: 0px;
+    margin: 0px;
+  }
+  h4 {
+    padding: 0px;
+    margin: 0px;
+  }
+  h5 {
+    padding: 0px;
+    margin: 0px;
+    margin: 0;
+    font-family: $font-family_1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    color: $color_2;
+    letter-spacing: 1px;
+  }
+  p {
+    padding: 0px;
+    margin: 0px;
+  }
+  a {
+    padding: 0px;
+    margin: 0px;
+    color: $color_1;
+    font-size: 14px;
+    font-family: $font-family_1;
+    letter-spacing: 1px;
+  }
+  li {
+    padding: 0px;
+    margin: 0px;
+  }
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  .a-link {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    height: 100%;
+    font-family: $font-family_1;
+    padding: 19px 0px;
+    padding-right: 6rem;
+    gap: 10px;
+  }
+  body {
+    background: #ffffff86;
+    font-family: $font-family_2;
+    color: $color_3;
+    margin: 0px;
+    padding: 0px;
+
+    overflow-x: hidden;
+  }
+
+  .swiper-buttons {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+  }
+  .swiper-button-prev {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: white;
+    opacity: 1;
+    box-shadow: 0px 2px 4px rgba(128, 128, 128, 1);
+    &::after {
+      color: $color_3;
+      width: fit-content;
+      padding: 10px;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .swiper-button-next {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: white;
+    opacity: 1;
+    box-shadow: 0px 2px 4px rgba(128, 128, 128, 1);
+    &::after {
+      color: $color_3;
+      width: fit-content;
+      padding: 10px;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .icon-box-container {
+    transition: all 0.5s ease;
+    gap: 1rem;
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
     display: none;
   }
 }
-h1 {
-  padding: 0px;
-  margin: 0px;
-}
-h2 {
-  padding: 0px;
-  margin: 0px;
-  font-family: $font-family_3;
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 400;
-  margin: 0;
-  color: $color_1;
-}
-h3 {
-  padding: 0px;
-  margin: 0px;
-}
-h4 {
-  padding: 0px;
-  margin: 0px;
-}
-h5 {
-  padding: 0px;
-  margin: 0px;
-  margin: 0;
-  font-family: $font-family_1;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18.2px;
-  color: $color_2;
-  letter-spacing: 1px;
-}
-p {
-  padding: 0px;
-  margin: 0px;
-}
-a {
-  padding: 0px;
-  margin: 0px;
-  color: $color_1;
-  font-size: 14px;
-  font-family: $font-family_1;
-  letter-spacing: 1px;
-}
-li {
-  padding: 0px;
-  margin: 0px;
-}
-ul {
-  padding: 0px;
-  margin: 0px;
-}
-.a-link {
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-  height: 100%;
-  font-family: $font-family_1;
-  padding: 19px 0px;
-  padding-right: 6rem;
-  gap: 10px;
-}
-body {
-  background: #ffffff86;
-  font-family: $font-family_2;
-  color: $color_3;
-  margin: 0px;
-  padding: 0px;
-
-  overflow-x: hidden;
-}
-
-.swiper-buttons {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  width: 90%;
-  justify-content: space-around;
-}
-.swiper-button-prev {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: white;
-  opacity: 1;
-  box-shadow: 0px 2px 4px rgba(128, 128, 128, 1);
-  &::after {
-    color: $color_3;
-    width: fit-content;
-    padding: 10px;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.swiper-button-next {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: white;
-  opacity: 1;
-  box-shadow: 0px 2px 4px rgba(128, 128, 128, 1);
-  &::after {
-    color: $color_3;
-    width: fit-content;
-    padding: 10px;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.icon-box-container {
-  transition: all 0.5s ease;
-  gap: 1rem;
-  width: max-content;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 20%;
-  display: none;
-}
-
 .hero_section {
   position: relative;
   .hero_section_main_image {
@@ -528,6 +538,8 @@ body {
         transition: all 0.5s ease;
         flex-direction: column;
         .nav-link {
+          border: none;
+          background: transparent;
           border-bottom: 1px solid #eaeaea;
           border-right: 1px solid #eaeaea;
           padding: 33px 0px;
@@ -1548,36 +1560,46 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .hero_section,
+  #shop-by-craft,
+  #shop-by-color,
+  #shop_from_reels,
+  .home-reviews,
+  #shop-bestsellers,
+  #shop-by-category,
+  #shop_by_occassion,
+  #do_you_know_section {
+    a {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h5 {
+      font-size: 11px;
+    }
+
+    .grid-1 {
+      flex: 0 0 100%;
+      order: 1;
+      text-align: center;
+    }
+    .grid-2 {
+      flex: 0 0 100%;
+      order: 1;
+      text-align: center;
+      order: 3;
+      text-align: center;
+    }
+    .grid-3 {
+      flex: 0 0 100%;
+      order: 1;
+      text-align: center;
+      order: 2;
+    }
+  }
   .shop-by-color-title {
     padding-left: 0;
-  }
-  a {
-    font-size: 12px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  h5 {
-    font-size: 11px;
-  }
-
-  .grid-1 {
-    flex: 0 0 100%;
-    order: 1;
-    text-align: center;
-  }
-  .grid-2 {
-    flex: 0 0 100%;
-    order: 1;
-    text-align: center;
-    order: 3;
-    text-align: center;
-  }
-  .grid-3 {
-    flex: 0 0 100%;
-    order: 1;
-    text-align: center;
-    order: 2;
   }
   #shop-by-craft {
     background-image: none;
@@ -1872,7 +1894,7 @@ body {
       }
     }
     .shop-bestsellers {
-      padding: 20px 24px 0;
+      padding: 20px 9px 0;
       margin-top: 0;
     }
     .icon-box-container {
